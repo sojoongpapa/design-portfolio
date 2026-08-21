@@ -1,0 +1,902 @@
+{
+  "image": "images/about/f2c32f3227a4d3af96ac3ed76caa43d6.jpg",
+  "intro": "Web Design 이라는 영역으로 디자인 분야에 입문하여 그동안 수많은 프로젝트들을 안정적으로 런칭하고 운영해오며 시대의 흐름에 맞게 Web이라는 영역뿐 아닌 B2B, B2C, ATL, BTL 사업 전반에 대하여 디자인이 필요한 모든 부분에서 제작/기획/운영 등 다양한 분야를 접하며 꾸준한 변화와 개인의 발전을 위해 노력하는 디자이너입니다. 웹 에이전시, 디지털 광고 대행사, 임대쇼핑몰, 인하우스 웹디자인, 패션 스튜디오 등의 회사들을 거치며 각 서비스 속에서 Web이라는 분야를 맡아 항상 신뢰도 있는 제작물을 만들어 왔습니다. 업무에 있어 프로젝트의 제작뿐 아닌 매니저로서 팀을 운영, 관리하고 인재 육성에도 소홀히 하지 않으며 대외적으로 주변인들과 원만하고 유쾌하며 자율성을 존중하는 커뮤니케이션을 추구하도록 노력하고 있습니다. 디자인 전반에 관한 다양한 스킬을 보유하고 있으며 경험도 풍부하다고 자부하고 있습니다. 디자인 업무의 영역을 떠나 현 SNS 광고 트렌드와, 1인 방송 시대의 흐름에 맞추어 동영상 영역의 디지털 모션 그래픽 과정을 수료하였고, 자바스크립트, Jquery, HTML5, CSS3 등 Web 서비스에 필요한 주요 스킬들도 가지고 있고 꾸준히 업데이트를 진행하고 있습니다. 어떤 기업에서든 맡은 업무를 꾸준한 성실함과 노력으로 항상 좋은 결과를 만들어 왔고 또 디자인 분야 자체를 즐기는 타입으로 주변 동료들에게 모범이 되어 왔으며 이런 성향을 항상 좋게 평가 받아왔습니다. 더욱 넓은 세상속에서 서로 윈윈 할 수 있는 반가운 인연을 만날 수 있기를 항상 기대하며, 제가 가지고 있는 기술과 경험으로 기업에 긍정적 에너지와 이로운 역량을 발휘할 것을 약속드립니다.",
+  "tools": [
+    "Adobe Photoshop",
+    "Adobe Illustrator",
+    "Adobe Premiere Pro",
+    "Adobe After effects",
+    "Adobe InDesign",
+    "Adobe Lightroom",
+    "Visual Studio Code",
+    "canon EOS R",
+    "CURSOR"
+  ],
+  "skills": [
+    "Web Design",
+    "Advertising Design",
+    "Illustration",
+    "Character Design",
+    "Photography",
+    "Planning",
+    "Wireframing",
+    "HTML5",
+    "CSS3",
+    "Javascript",
+    "JQUERY",
+    "AI"
+  ],
+  "clients": [
+    "SAMSUNG",
+    "HYUNDAI",
+    "SK telecom",
+    "Maxim",
+    "Netmarble",
+    "SK innovation",
+    "INNOCEAN",
+    "It'S SKIN",
+    "DAEHONG communications",
+    "Cheil",
+    "D.tribe",
+    "SHINHAN BANK",
+    "samsung card",
+    "CLIO",
+    "adidas woman",
+    "Eucerin",
+    "Daishin Securities",
+    "FILA",
+    "TBWA",
+    "Neungyule",
+    "Sono Belle CHEONAN",
+    "EVERLAND RESORT",
+    "KEB Hana Bank",
+    "ORION",
+    "Standard Chartered",
+    "woongjin coway",
+    "LOreal Paris",
+    "SK EnClean",
+    "ANYMODE",
+    "iporter",
+    "Maeil",
+    "Pagoda",
+    "Direct english",
+    "pagoda junior",
+    "guideposts",
+    "aT Center",
+    "NATIONAL ASSEMBLY",
+    "Sunin Motors",
+    "elcanto"
+  ],
+  "experience": [
+    {
+      "year": "2024",
+      "items": [
+        {
+          "month": "7",
+          "client": "(주) 이런회사",
+          "description": "(주) 이런회사 퇴사"
+        }
+      ]
+    },
+    {
+      "year": "2019",
+      "items": [
+        {
+          "month": "12",
+          "client": "(주) 이런회사",
+          "description": "(주) 이런회사 입사"
+        }
+      ]
+    },
+    {
+      "year": "2018",
+      "items": [
+        {
+          "month": "01",
+          "client": "(주) 디트라이브",
+          "description": "(주) 디트라이브 퇴사"
+        }
+      ]
+    },
+    {
+      "year": "2017",
+      "items": [
+        {
+          "month": "12",
+          "client": "현대자동차",
+          "description": "현대자동차 벨로스터 N 런칭 사전 프로모션"
+        },
+        {
+          "month": "11",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 수능 맞춤형 밴드 수능 앤딩 프로모션"
+        },
+        {
+          "month": "11",
+          "client": "삼성전자",
+          "description": "삼성전자 파워봇, 파워건 VR 체험존 인터렉티브 무비 런칭"
+        },
+        {
+          "month": "11",
+          "client": "삼성전자",
+          "description": "삼성전자 노트북9 Pen 런칭 프로모션"
+        },
+        {
+          "month": "10",
+          "client": "현대자동차",
+          "description": "현대자동차 벨로스터 신규 런칭 마이크로 사이트"
+        },
+        {
+          "month": "08",
+          "client": "맥심",
+          "description": "동서식품 맥심 모카골드 심플라떼 런칭 프로모션"
+        },
+        {
+          "month": "07",
+          "client": "신한카드",
+          "description": "신한카드 메가루키 페스티발 리뉴얼"
+        },
+        {
+          "month": "07",
+          "client": "신한카드",
+          "description": "신한카드 Great 루키 프로젝트 리뉴얼"
+        },
+        {
+          "month": "05",
+          "client": "삼성전자",
+          "description": "삼성전자 시스템 에어컨 360 프로모션 런칭"
+        },
+        {
+          "month": "04",
+          "client": "맥심",
+          "description": "동서식품 맥심 모카골드 아이스 런칭 프로모션"
+        },
+        {
+          "month": "04",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 T페이 런칭 프로모션"
+        },
+        {
+          "month": "03",
+          "client": "현대자동차",
+          "description": "현대자동차 쏘나타 뉴라이즈 런칭 프로모션"
+        },
+        {
+          "month": "02",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 스마트홈 서비스 프로모션 런칭"
+        },
+        {
+          "month": "01",
+          "client": "신한카드",
+          "description": "신한카드 FAN 클럽 런칭 1주년 프로모션"
+        }
+      ]
+    },
+    {
+      "year": "2016",
+      "items": [
+        {
+          "month": "12",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 크리스마스 선물 배송 이벤트"
+        },
+        {
+          "month": "11",
+          "client": "삼성전자",
+          "description": "삼성전자 지펠아삭 김치냉장고 메탈그라운드 런칭"
+        },
+        {
+          "month": "10",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 T전화 시즌3 런칭 프로모션"
+        },
+        {
+          "month": "09",
+          "client": "현대자동차",
+          "description": "현대자동차 아반떼 스포츠 런칭 프로모션"
+        },
+        {
+          "month": "08",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 T로밍 바캉스 런칭 프로모션"
+        },
+        {
+          "month": "07",
+          "client": "삼성전자",
+          "description": "삼성 패밀리허브 냉장고 런칭 캠페인"
+        },
+        {
+          "month": "06",
+          "client": "아디다스",
+          "description": "adidas woman 커미트투모어 캠페인 사이트"
+        },
+        {
+          "month": "05",
+          "client": "유세린",
+          "description": "Eucerin 하이알루론 나이트 필링 프로모션"
+        },
+        {
+          "month": "04",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 생활가치 플랫폼 생활플랫폼 런칭"
+        },
+        {
+          "month": "03",
+          "client": "신한카드",
+          "description": "신한 FAN(판) 클럽 런칭 캠페인"
+        },
+        {
+          "month": "02",
+          "client": "현대자동차",
+          "description": "현대자동차 아이오닉 하이브리드 런칭 캠페인"
+        },
+        {
+          "month": "01",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 폼(Form) 나게 산다 캠페인"
+        }
+      ]
+    },
+    {
+      "year": "2015",
+      "items": [
+        {
+          "month": "12",
+          "client": "삼성전자",
+          "description": "삼성전자 기어S2 런칭 글로벌 마이크로사이트"
+        },
+        {
+          "month": "11",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 T청춘 페스티벌 캠페인"
+        },
+        {
+          "month": "10",
+          "client": "현대자동차",
+          "description": "현대자동차 투싼 피버 런칭 프로모션"
+        },
+        {
+          "month": "09",
+          "client": "삼성전자",
+          "description": "삼성 커브드 모니터 런칭 캠페인"
+        },
+        {
+          "month": "08",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 이상하자 캠페인 프로모션"
+        },
+        {
+          "month": "06",
+          "client": "쉐보레",
+          "description": "쉐보레 스파크 런칭 프로모션"
+        },
+        {
+          "month": "05",
+          "client": "에이스침대",
+          "description": "에이스침대 침대는 과학이다 캠페인"
+        },
+        {
+          "month": "04",
+          "client": "대신증권",
+          "description": "대신증권 크레온 수수료 무료 캠페인"
+        },
+        {
+          "month": "03",
+          "client": "한국관광공사",
+          "description": "한국관광공사 구석구석 대한민국 캠페인"
+        },
+        {
+          "month": "01",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 백년의 편지 캠페인 사이트"
+        }
+      ]
+    },
+    {
+      "year": "2014",
+      "items": [
+        {
+          "month": "12",
+          "client": "삼성전자",
+          "description": "삼성전자 갤럭시노트4 S-LTE 런칭 프로모션"
+        },
+        {
+          "month": "10",
+          "client": "최인아 책방",
+          "description": "최인아 책방 브랜드 아이덴티티 및 웹사이트 기획/디자인"
+        },
+        {
+          "month": "09",
+          "client": "삼성전자",
+          "description": "삼성전자 커브드 UHD TV 런칭 프로모션"
+        },
+        {
+          "month": "08",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 광대역 LTE-A 런칭 캠페인"
+        },
+        {
+          "month": "06",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 T가족결합 프로모션"
+        },
+        {
+          "month": "04",
+          "client": "삼성전자",
+          "description": "제일기획 삼성전자 지펠아삭 레시피 공유 이벤트"
+        },
+        {
+          "month": "04",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 Welcome Package 상/하반기 리플렛"
+        },
+        {
+          "month": "03",
+          "client": "삼성카드",
+          "description": "삼성카드 홀가분 캠페인"
+        },
+        {
+          "month": "02",
+          "client": "에버랜드",
+          "description": "에버랜드 봄시즌 로스트벨리 홍보대사 캠페인"
+        },
+        {
+          "month": "01",
+          "client": "삼성카드",
+          "description": "삼성카드 홀가분 캠페인 제안 PT (수주)"
+        },
+        {
+          "month": "01",
+          "client": "SK텔레콤",
+          "description": "SK텔레콤 T LOL(롤) App 런칭 프로모션"
+        }
+      ]
+    },
+    {
+      "year": "2013",
+      "items": [
+        {
+          "month": "12",
+          "client": "능률교육",
+          "description": "토익단기달성비법 토단비 이벤트"
+        },
+        {
+          "month": "11",
+          "client": "삼성전자",
+          "description": "제일기획 삼성전자 페이스북 아티브 웹툰 프로모션"
+        },
+        {
+          "month": "10",
+          "client": "SC제일은행",
+          "description": "SC제일은행 착한도서관 시즌3 착한목소리기부 프로모션"
+        },
+        {
+          "month": "10",
+          "client": "coway",
+          "description": "웅진케어스 안심가습 신문 이벤트"
+        },
+        {
+          "month": "09",
+          "client": "LOreal Paris",
+          "description": "LOreal Paris 이드라후레쉬 이슬 광채 수분 이벤트"
+        },
+        {
+          "month": "08",
+          "client": "삼성전자",
+          "description": "제일기획 삼성지펠아삭 2013 프로모션"
+        },
+        {
+          "month": "07",
+          "client": "KB국민카드",
+          "description": "KB국민카드 전통시장 국민참여 프로젝트 프로모션"
+        },
+        {
+          "month": "07",
+          "client": "SC캐피탈",
+          "description": "TBWA SC캐피탈 홈페이지 메인 랜딩화면 리뉴얼"
+        },
+        {
+          "month": "07",
+          "client": "삼성전자",
+          "description": "제일기획 삼성컴퓨터ATIV 런칭 프로모션"
+        },
+        {
+          "month": "07",
+          "client": "삼성전자",
+          "description": "삼성모바일샵 페이스북 매장 MAP 소개"
+        },
+        {
+          "month": "05",
+          "client": "coway",
+          "description": "코웨이 물 성장 프로젝트 캠페인"
+        },
+        {
+          "month": "05",
+          "client": "테딘워터파크",
+          "description": "테딘 패밀리 워터파크 나만의 동화책 만들기 이벤트"
+        },
+        {
+          "month": "04",
+          "client": "SK엔크린",
+          "description": "SK엔크린 함께 키우는 책나무 도서나눔 캠페인"
+        },
+        {
+          "month": "03",
+          "client": "KB국민카드",
+          "description": "KB카드 꿈꾸는광고인 시즌 2 프로모션"
+        },
+        {
+          "month": "03",
+          "client": "SC캐피탈",
+          "description": "TBWA SC캐피탈 한도 조회 이벤트"
+        },
+        {
+          "month": "02",
+          "client": "LOreal Paris",
+          "description": "LOreal Paris 샤인카레스 발렌타인데이 이벤트"
+        },
+        {
+          "month": "01",
+          "client": "coway",
+          "description": "웅진케어스 2013 새해맞이 안심가습 설날 캠페인"
+        }
+      ]
+    },
+    {
+      "year": "2012",
+      "items": [
+        {
+          "month": "12",
+          "client": "삼성전자",
+          "description": "삼성모바일샵 페이스북 2012 FAN AWARDS 이벤트"
+        },
+        {
+          "month": "10",
+          "client": "coway",
+          "description": "케어스와 함께하는 안심 가습 캠페인"
+        },
+        {
+          "month": "10",
+          "client": "coway",
+          "description": "코웨이 2PM과 함께하는 물이 빛나는 밤에 뮤직 페스티벌"
+        },
+        {
+          "month": "08",
+          "client": "애니모드",
+          "description": "애니모드 스와로브스키 커버 콜렉션 이벤트"
+        },
+        {
+          "month": "08",
+          "client": "오리온",
+          "description": "오리온 SNS 오감자 CF 투표 이벤트"
+        },
+        {
+          "month": "07",
+          "client": "오리온",
+          "description": "오리온 파페포포와 함께하는 촉촉한초코칩 이벤트"
+        },
+        {
+          "month": "07",
+          "client": "삼성전자",
+          "description": "삼성 스마트 에어컨Q 김연아 올댓스케이트 이벤트"
+        },
+        {
+          "month": "07",
+          "client": "삼성전자",
+          "description": "삼성모바일샵 스마트라이프 친구소개 이벤트"
+        },
+        {
+          "month": "06",
+          "client": "대신증권",
+          "description": "크레온 대국민 주식투자 서바이벌 1억 투자 이벤트"
+        },
+        {
+          "month": "06",
+          "client": "매일유업",
+          "description": "TBWA 매일유업 상하목장 유기농 이야기 프로모션"
+        },
+        {
+          "month": "05",
+          "client": "삼성전자",
+          "description": "삼성 스마트 에어컨Q 연아의 하루 이벤트"
+        },
+        {
+          "month": "05",
+          "client": "SK에너지",
+          "description": "엔크린 제휴 할인 이벤트"
+        },
+        {
+          "month": "05",
+          "client": "SC캐피탈",
+          "description": "아이스탠다드론의 아이 참 쉬운 이벤트"
+        },
+        {
+          "month": "04",
+          "client": "(주) 디트라이브",
+          "description": "(주) 디트라이브 입사"
+        },
+        {
+          "month": "02",
+          "client": "아이오더",
+          "description": "[프리랜서] 아이오더 패션 도매몰 웹/태블릿 사이트"
+        },
+        {
+          "month": "02",
+          "client": "아이오더",
+          "description": "[프리랜서] 아이오더 회사 소개 사이트"
+        }
+      ]
+    },
+    {
+      "year": "2011",
+      "items": [
+        {
+          "month": "07",
+          "client": "파고다SCS",
+          "description": "www.testclinic.com 시험일정 캘린더 시스템"
+        },
+        {
+          "month": "07",
+          "client": "파고다SCS",
+          "description": "pagoda21 NAVER 여름방학 플래시 배너"
+        },
+        {
+          "month": "06",
+          "client": "파고다SCS",
+          "description": "BCA Canada (http://www.bcacanada.org/) 웹사이트"
+        },
+        {
+          "month": "06",
+          "client": "파고다SCS",
+          "description": "Pagoda World TEPS 단어 게임"
+        },
+        {
+          "month": "06",
+          "client": "파고다SCS",
+          "description": "www.pagoda21.com 통합 사이트 부분 리뉴얼"
+        },
+        {
+          "month": "06",
+          "client": "파고다SCS",
+          "description": "Pagoda World Self Test 문제풀이 시스템"
+        },
+        {
+          "month": "05",
+          "client": "파고다SCS",
+          "description": "파고다 토익 안드로이드 어플리케이션"
+        },
+        {
+          "month": "05",
+          "client": "파고다SCS",
+          "description": "www.pagodabook.com 사이트 부분 리뉴얼"
+        },
+        {
+          "month": "03",
+          "client": "파고다SCS",
+          "description": "토익 예상적중 동영상강의 오픈 이벤트"
+        },
+        {
+          "month": "02",
+          "client": "교육 이수",
+          "description": "웹표준 퍼블리싱 3개월 교육과정 이수"
+        },
+        {
+          "month": "02",
+          "client": "파고다SCS",
+          "description": "Pagoda World 열공프로젝트 이벤트"
+        },
+        {
+          "month": "01",
+          "client": "파고다SCS",
+          "description": "Pagoda World 오미쿠지 플래시 게임"
+        },
+        {
+          "month": "01",
+          "client": "파고다SCS",
+          "description": "m.Testclinic.com 모바일 사이트"
+        }
+      ]
+    },
+    {
+      "year": "2010",
+      "items": [
+        {
+          "month": "12",
+          "client": "파고다SCS",
+          "description": "파고다21 패밀리 사이트 축소 리뉴얼"
+        },
+        {
+          "month": "12",
+          "client": "파고다SCS",
+          "description": "TOEFL Speaking 안드로이드 어플리케이션"
+        },
+        {
+          "month": "11",
+          "client": "파고다SCS",
+          "description": "차세대 리더쉽 사내 교육 참여"
+        },
+        {
+          "month": "11",
+          "client": "파고다SCS",
+          "description": "파고다21 그룹웨어 리뉴얼 프로젝트"
+        },
+        {
+          "month": "10",
+          "client": "파고다SCS",
+          "description": "www.jobpagoda.com 잡파고다 일본어 버전"
+        },
+        {
+          "month": "09",
+          "client": "파고다SCS",
+          "description": "Scavenger Hunt 이벤트"
+        },
+        {
+          "month": "08",
+          "client": "파고다SCS",
+          "description": "PAGODA Better Campaign 프로모션"
+        },
+        {
+          "month": "07",
+          "client": "파고다SCS",
+          "description": "Test Clinic JLPT 강의 시스템"
+        },
+        {
+          "month": "05",
+          "client": "파고다SCS",
+          "description": "파고다21 남아공 월드컵 프로모션"
+        },
+        {
+          "month": "04",
+          "client": "파고다SCS",
+          "description": "파고다21 언어 과목별 네이버 카페/블로그"
+        },
+        {
+          "month": "03",
+          "client": "파고다SCS",
+          "description": "www.pagoda21.com 온라인 수강신청 결재 UI 리뉴얼"
+        },
+        {
+          "month": "01",
+          "client": "파고다SCS",
+          "description": "파고다 강사 전용 그룹웨어 신규 사이트"
+        }
+      ]
+    },
+    {
+      "year": "2009",
+      "items": [
+        {
+          "month": "09",
+          "client": "파고다SCS",
+          "description": "www.pagoda21.com 커뮤니티 리뉴얼"
+        },
+        {
+          "month": "08",
+          "client": "파고다SCS",
+          "description": "www.testclinic.com 신규 사이트"
+        },
+        {
+          "month": "07",
+          "client": "파고다SCS",
+          "description": "다이렉트잉글리쉬 PC 위젯 홍보 프로모션"
+        },
+        {
+          "month": "06",
+          "client": "파고다SCS",
+          "description": "다이렉트잉글리쉬 전용 PC 바탕화면 위젯 프로그램"
+        },
+        {
+          "month": "06",
+          "client": "파고다SCS",
+          "description": "www.pagodabook.com 출판 관리 시스템 어플리케이션"
+        },
+        {
+          "month": "02",
+          "client": "파고다SCS",
+          "description": "PAGODA Group Study 신규 사이트"
+        },
+        {
+          "month": "01",
+          "client": "파고다SCS",
+          "description": "Direct english 블로그 페스티발 프로모션"
+        }
+      ]
+    },
+    {
+      "year": "2008",
+      "items": [
+        {
+          "month": "12",
+          "client": "파고다SCS",
+          "description": "파고다 토익/토플 모의 테스트 시스템"
+        },
+        {
+          "month": "09",
+          "client": "파고다SCS",
+          "description": "www.pagodajunior.com 부분 리뉴얼"
+        },
+        {
+          "month": "08",
+          "client": "파고다SCS",
+          "description": "다이렉트잉글리쉬 Daily Evaluation 시스템"
+        },
+        {
+          "month": "07",
+          "client": "파고다SCS",
+          "description": "www.pagoda21.com 통합 리뉴얼 외주 디자인 관리"
+        },
+        {
+          "month": "04",
+          "client": "파고다SCS",
+          "description": "파고다 PAMIS 내부 SI 시스템 부분 리뉴얼"
+        },
+        {
+          "month": "02",
+          "client": "파고다SCS",
+          "description": "www.jobpagoda.com 사이트 리뉴얼"
+        },
+        {
+          "month": "01",
+          "client": "파고다SCS",
+          "description": "파고다 플랜 기부 캠패인"
+        }
+      ]
+    },
+    {
+      "year": "2007",
+      "items": [
+        {
+          "month": "07",
+          "client": "파고다SCS",
+          "description": "파고다21 패밀리 머니 경매 서비스"
+        },
+        {
+          "month": "01",
+          "client": "파고다SCS",
+          "description": "파고다21 내부 키오스크 홍보 플래시 디자인"
+        }
+      ]
+    },
+    {
+      "year": "2006",
+      "items": [
+        {
+          "month": "09",
+          "client": "파고다SCS",
+          "description": "www.guideposts.co.kr 홈페이지 리뉴얼"
+        },
+        {
+          "month": "08",
+          "client": "파고다SCS",
+          "description": "PAGODA cafe huh 오픈 런칭 프로모션"
+        },
+        {
+          "month": "06",
+          "client": "파고다SCS",
+          "description": "파고다21 수강신청 이니시스 Ria 결재 시스템 리뉴얼"
+        },
+        {
+          "month": "05",
+          "client": "파고다SCS",
+          "description": "잡파고다 Medical Questionnaire Form 시스템"
+        },
+        {
+          "month": "02",
+          "client": "파고다SCS",
+          "description": "www.pagodapip.com PIP 브랜드 신규 사이트"
+        }
+      ]
+    },
+    {
+      "year": "2005",
+      "items": [
+        {
+          "month": "11",
+          "client": "파고다SCS",
+          "description": "파고다21 www.pagoda21.com"
+        },
+        {
+          "month": "11",
+          "client": "파고다SCS",
+          "description": "다이렉트잉글리쉬 www.directenglish.co.kr"
+        },
+        {
+          "month": "11",
+          "client": "파고다SCS",
+          "description": "파고다주니어 www.pagodajunior.com"
+        },
+        {
+          "month": "11",
+          "client": "파고다SCS",
+          "description": "파고다출판사 www.pagodabook.com"
+        },
+        {
+          "month": "11",
+          "client": "파고다SCS",
+          "description": "잡파고다 www.jobpagoda.com"
+        },
+        {
+          "month": "11",
+          "client": "파고다SCS",
+          "description": "예스토익 www.yestoeic.co.kr"
+        },
+        {
+          "month": "11",
+          "client": "파고다SCS",
+          "description": "가이드포스트 www.guideposts.co.kr"
+        },
+        {
+          "month": "11",
+          "client": "(주) 파고다SCS",
+          "description": "파고다SCS 입사"
+        },
+        {
+          "month": "03",
+          "client": "한길스튜디오",
+          "description": "제일모직, 엘지패션, DOHC, 꼼빠니아, 나산 등 패션의류 제품소개서 및 코디북 제작"
+        }
+      ]
+    },
+    {
+      "year": "2004",
+      "items": [
+        {
+          "month": "12",
+          "client": "한길스튜디오",
+          "description": "한길스튜디오 입사"
+        },
+        {
+          "month": "10",
+          "client": "농수산물유통공사",
+          "description": "www.at.or.kr 수출 브랜드 '휘모리' 사이트"
+        },
+        {
+          "month": "08",
+          "client": "대한민국 국회",
+          "description": "www.assembly.go.kr 대한민국 국회 사이트 리뉴얼"
+        },
+        {
+          "month": "08",
+          "client": "(주) 아이오즈",
+          "description": "㈜ 아이오즈 입사"
+        }
+      ]
+    },
+    {
+      "year": "2003",
+      "items": [
+        {
+          "month": "06",
+          "client": "lawYBL",
+          "description": "www.lawybl.com 통합 법무법인 사이트"
+        },
+        {
+          "month": "03",
+          "client": "선인자동차",
+          "description": "선인포드자동차 사이트 서브 리뉴얼"
+        },
+        {
+          "month": "01",
+          "client": "엘칸토",
+          "description": "www.elcanto.co.kr 엘칸토 홈페이지 리뉴얼"
+        }
+      ]
+    },
+    {
+      "year": "2002",
+      "items": [
+        {
+          "month": "11",
+          "client": "크림소프트",
+          "description": "크림소프트 임대 쇼핑몰 입점 브랜드 유지보수"
+        },
+        {
+          "month": "10",
+          "client": "(주) 크림소프트",
+          "description": "㈜ 크림소프트 입사"
+        }
+      ]
+    }
+  ]
+}

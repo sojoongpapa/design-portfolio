@@ -1,0 +1,41 @@
+{
+  "name": "CHOI JIN WON",
+  "role": "Web & Digital Designer",
+  "bio": "Web Design 이라는 영역으로 디자인 분야에 입문하여 그동안 수많은 프로젝트들을 안정적으로 런칭하고 운영해오며 시대의 흐름에 맞게 Web이라는 영역뿐 아닌 B2B, B2C, ATL, BTL 사업 전반에 대하여 디자인이 필요한 모든 부분에서 제작/기획/운영 등 다양한 분야를 접하며 꾸준한 변화와 개인의 발전을 위해 노력하는 디자이너입니다. 웹 에이전시, 디지털 광고 대행사, 임대쇼핑몰, 인하우스 웹디자인, 패션 스튜디오 등의 회사들을 거치며 각 서비스 속에서 Web이라는 분야를 맡아 항상 신뢰도 있는 제작물을 만들어 왔습니다.",
+  "tickerKeywords": [
+    "UI / UX DESIGN",
+    "CREATIVE DIRECTION",
+    "INTERACTIVE WEB",
+    "BRAND IDENTITY",
+    "DESIGN SYSTEMS",
+    "FRONTEND DEVELOPMENT",
+    "DIGITAL STRATEGY",
+    "20+ YEARS CRAFT"
+  ],
+  "designPillars": [
+    {
+      "num": "01",
+      "title": "Clarity & Purpose",
+      "desc": "불필요한 요소를 정돈하고 본질에 집중합니다. 사용자의 직관적인 경험과 브랜드 메시지가 명확히 전달되는 구조를 설계합니다.",
+      "icon": "Compass"
+    },
+    {
+      "num": "02",
+      "title": "Kinetic & Emotion",
+      "desc": "화면에 생동감을 불어넣는 마이크로 애니메이션과 반응형 인터랙션으로 사용자와 제품 간의 깊은 몰입감을 만듭니다.",
+      "icon": "Zap"
+    },
+    {
+      "num": "03",
+      "title": "Scalable Craftsmanship",
+      "desc": "20년의 실무 경험을 바탕으로 기획부터 비주얼 디자인, 웹 표준 코드 구현까지 견고하고 확장 가능한 완성도를 보장합니다.",
+      "icon": "ShieldCheck"
+    },
+    {
+      "num": "04",
+      "title": "AI & Experience Synergy",
+      "desc": "수많은 실무 경험과 최신 AI 도구를 유기적으로 결합하여, 빠르고 정확하며 완성도 높은 디지털 결과물을 제작합니다.",
+      "icon": "Sparkles"
+    }
+  ]
+}
