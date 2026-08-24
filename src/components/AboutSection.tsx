@@ -38,8 +38,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ about }) => {
         <div className="about-hero-text">
           <span className="section-label">Biography</span>
           <h2 className="about-heading">
-            디지털 환경의 본질을 짚고<br className="hide-mobile" />
-            지속 가능한 가치를 만드는 디자이너
+            디자인과 기술의 경계를 넘어<br className="hide-mobile" />
+            새로운 디지털 경험을 만드는 디자이너
+            {/* 디지털 환경의 본질을 짚고<br className="hide-mobile" />
+            지속 가능한 가치를 만드는 디자이너 */}
           </h2>
           <p className="about-text">{about.intro}</p>
         </div>
