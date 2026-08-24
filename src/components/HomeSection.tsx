@@ -20,7 +20,7 @@ interface HomeSectionProps {
   projects: ProjectItem[];
   theme?: Theme;
   onNavigate: (tab: TabType) => void;
-  onSelectProject: (project: ProjectItem) => void;
+  onSelectProject: (project: ProjectItem, contextProjects?: ProjectItem[]) => void;
 }
 
 const parseProjectDate = (d?: string) => {
@@ -358,7 +358,7 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
         {heroFeaturedProject && (
           <div
             className="cinematic-spotlight-card"
-            onClick={() => onSelectProject(heroFeaturedProject)}
+            onClick={() => onSelectProject(heroFeaturedProject, projects)}
           >
             <SpotlightMedia project={heroFeaturedProject} />
             <div className="spotlight-content-box">
@@ -385,7 +385,7 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
             <ProjectCard
               key={project.id}
               project={project}
-              onClick={onSelectProject}
+              onClick={(p) => onSelectProject(p, projects)}
             />
           ))}
         </div>

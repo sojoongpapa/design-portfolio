@@ -9,6 +9,62 @@ interface ProjectModalProps {
   onSelectProject: (project: ProjectItem) => void;
 }
 
+interface DetailImageItemProps {
+  src: string;
+  alt: string;
+  index: number;
+}
+
+const DetailImageItem: React.FC<DetailImageItemProps> = ({ src, alt, index }) => {
+  const [loaded, setLoaded] = useState(false);
+  const [hasError, setHasError] = useState(false);
+
+  const imageSrc = src?.trim();
+
+  if (hasError || !imageSrc) {
+    return (
+      <div className="detail-empty-placeholder" style={{ padding: '36px 16px' }}>
+        <ImageOff size={28} style={{ opacity: 0.35 }} />
+        <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+          이미지를 불러올 수 없습니다 (상세 이미지 {index + 1})
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="detail-img-wrapper" style={{ position: 'relative', minHeight: loaded ? 'auto' : '160px' }}>
+      {!loaded && !hasError && (
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'linear-gradient(90deg, #15151a 0%, #202028 50%, #15151a 100%)',
+            animation: 'pulse 1.5s infinite',
+            borderRadius: 'var(--radius-md, 8px)',
+            minHeight: '160px',
+            zIndex: 1,
+          }}
+        />
+      )}
+      <img
+        src={imageSrc}
+        alt={alt}
+        onLoad={() => setLoaded(true)}
+        onError={() => setHasError(true)}
+        className="detail-flow-img"
+        style={{
+          opacity: loaded ? 1 : 0,
+          transition: 'opacity 0.3s ease-in-out',
+          display: 'block',
+          width: '100%',
+          height: 'auto',
+        }}
+      />
+    </div>
+  );
+};
+
 export const ProjectModal: React.FC<ProjectModalProps> = ({
   project,
   projects,
@@ -52,7 +108,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
       overlayRef.current.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
       setIsScrolled(false);
     }
-  }, [project.id]);
+  }, [project.id, project.title]);
 
   // Determine list of detail images
   const detailList = (project.detailImages || []).filter((url) => typeof url === 'string' && url.trim() !== '');
@@ -107,7 +163,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
             </button>
 
             <span className="detail-page-counter">
-              {currentIndex + 1} / {projects.length}
+              {currentIndex >= 0 ? currentIndex + 1 : 1} / {projects.length}
             </span>
 
             <button
@@ -174,17 +230,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           <div className="detail-images-body">
             {displayImages.length > 0 ? (
               displayImages.map((imgUrl, idx) => (
-                <div key={idx} className="detail-img-wrapper">
-                  <img
-                    src={imgUrl}
-                    alt={`${project.title} - detail ${idx + 1}`}
-                    loading="lazy"
-                    className="detail-flow-img"
-                    onError={(e) => {
-                      (e.currentTarget.style.display = 'none');
-                    }}
-                  />
-                </div>
+                <DetailImageItem
+                  key={`${project.id || project.title}-${idx}-${imgUrl}`}
+                  src={imgUrl}
+                  alt={`${project.title} - detail ${idx + 1}`}
+                  index={idx}
+                />
               ))
             ) : (
               <div className="detail-empty-placeholder">

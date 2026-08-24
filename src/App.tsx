@@ -18,6 +18,7 @@ export const App: React.FC = () => {
   const [flipDirection, setFlipDirection] = useState<'right' | 'left'>('right');
   const [flipPhase, setFlipPhase] = useState<'idle' | 'out' | 'in'>('idle');
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
+  const [modalProjects, setModalProjects] = useState<ProjectItem[]>([]);
 
   const TAB_ORDER: TabType[] = ['HOME', 'PROJECTS', 'ABOUT', 'CONTACT'];
 
@@ -41,6 +42,16 @@ export const App: React.FC = () => {
     } else if (flipPhase === 'in') {
       setFlipPhase('idle');
     }
+  };
+
+  const handleOpenProject = (project: ProjectItem, contextProjects?: ProjectItem[]) => {
+    setSelectedProject(project);
+    setModalProjects(contextProjects && contextProjects.length > 0 ? contextProjects : (data?.projects || []));
+  };
+
+  const handleCloseProject = () => {
+    setSelectedProject(null);
+    setModalProjects([]);
   };
 
   if (loading && !data) {
@@ -78,14 +89,14 @@ export const App: React.FC = () => {
             projects={projects}
             theme={theme}
             onNavigate={handleTabChange}
-            onSelectProject={setSelectedProject}
+            onSelectProject={handleOpenProject}
           />
         );
       case 'PROJECTS':
         return (
           <ProjectsSection
             projects={projects}
-            onSelectProject={setSelectedProject}
+            onSelectProject={handleOpenProject}
           />
         );
       case 'ABOUT':
@@ -103,6 +114,8 @@ export const App: React.FC = () => {
       : flipPhase === 'in'
       ? `flip-in-${flipDirection}`
       : '';
+
+  const activeModalProjects = modalProjects.length > 0 ? modalProjects : projects;
 
   return (
     <div className="app-container">
@@ -134,9 +147,9 @@ export const App: React.FC = () => {
       {selectedProject && (
         <ProjectModal
           project={selectedProject}
-          projects={projects}
-          onClose={() => setSelectedProject(null)}
-          onSelectProject={setSelectedProject}
+          projects={activeModalProjects}
+          onClose={handleCloseProject}
+          onSelectProject={(p) => setSelectedProject(p)}
         />
       )}
 

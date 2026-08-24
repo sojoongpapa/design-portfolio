@@ -5,7 +5,7 @@ import { Search, Layers, Filter, X } from 'lucide-react';
 
 interface ProjectsSectionProps {
   projects: ProjectItem[];
-  onSelectProject: (project: ProjectItem) => void;
+  onSelectProject: (project: ProjectItem, contextProjects?: ProjectItem[]) => void;
 }
 
 export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
@@ -161,7 +161,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
             <ProjectCard
               key={project.id}
               project={project}
-              onClick={onSelectProject}
+              onClick={(p) => onSelectProject(p, filteredProjects)}
             />
           ))}
         </div>
