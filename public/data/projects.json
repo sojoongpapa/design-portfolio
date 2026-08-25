@@ -15,13 +15,348 @@
   },
   {
     "title": "xxxxx",
-    "caption": "xxxxxxxx",
+    "caption": "xxxxx",
     "category": "EVENT",
     "image": "images/project/2014/thumb/xxxxx",
     "date": "Jan, 2014",
     "alt": "",
     "detailImages": [
       "images/project/2014/contents/xxxxxx"
+    ],
+    "link": ""
+  },
+  {
+    "title": "xxxxx",
+    "caption": "xxxxx",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/xxxxx",
+    "date": "Jan, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/xxxxxx"
+    ],
+    "link": ""
+  },
+  {
+    "title": "xxxxx",
+    "caption": "xxxxx",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/xxxxx",
+    "date": "Jan, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/xxxxxx"
+    ],
+    "link": ""
+  },
+  {
+    "title": "SK telecom",
+    "caption": "SKT 고객만의 특별한 혜택 Welcome Package 리플렛",
+    "category": "PRINT",
+    "image": "images/project/2014/thumb/thum_sktbook2.jpg",
+    "date": "Nov, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/sktbook2_01.jpg",
+      "images/project/2014/contents/sktbook2_02.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "삼성 지펠아삭",
+    "caption": "지펠아삭 당신에게 어울리는 김치를 묻다",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_zipalwebt.jpg",
+    "date": "Nov, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/zipalwebt_01.jpg",
+      "images/project/2014/contents/zipalwebt_02.jpg",
+      "images/project/2014/contents/zipalwebt_03.jpg",
+      "images/project/2014/contents/zipalwebt_04.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "FILA OUTDOOR",
+    "caption": "이중적인, 그래서 완벽한 김수현의 FILA 테라다운 야누스 프로모션",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_fila.jpg",
+    "date": "Oct, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/fila_01.jpg",
+      "images/project/2014/contents/fila_02.jpg",
+      "images/project/2014/contents/fila_03.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "맥심",
+    "caption": "커피라는 행복, 시 묵학제 캠페인 제안",
+    "category": "BRANDING",
+    "image": "images/project/2014/thumb/thum_maximpt.jpg",
+    "date": "Sep, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/maximpt_01.jpg",
+      "images/project/2014/contents/maximpt_02.jpg",
+      "images/project/2014/contents/maximpt_03.jpg",
+      "images/project/2014/contents/maximpt_04.jpg",
+      "images/project/2014/contents/maximpt_05.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "대신증권 크레온",
+    "caption": "이루어 Dream 프로젝트 프로모션",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_dream.jpg",
+    "date": "Sep, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/dream_01.jpg",
+      "images/project/2014/contents/dream_02.jpg",
+      "images/project/2014/contents/dream_03.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "삼성전자 S'데이",
+    "caption": "설민석 강사의 김치역사 특강 '우리는 왜 땅속으로 들어갔는가'",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_zipalsulk.jpg",
+    "date": "Jul, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/zipalsulk_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "삼성전자 S'골드러시",
+    "caption": "상반기 고객 사랑 감사기념 2015년형 지펠아삭 신제품 사전예약 대축제",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_zipalsasa.jpg",
+    "date": "Jul, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/zipalsasa_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "삼성전자",
+    "caption": "풀HD보다 4배 더 생생한 리얼 화질 삼성 UHD 모니터 UD970 '과연 누가 최고의 눈일까?'",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_ud970.jpg",
+    "date": "Jul, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/ud970_01.jpg",
+      "images/project/2014/contents/ud970_02_b.jpg",
+      "images/project/2014/contents/ud970_02.jpg",
+      "images/project/2014/contents/ud970_03.jpg",
+      "images/project/2014/contents/ud970_04.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "에버랜드",
+    "caption": "캐리비안베이 여름 캠페인 '싸이의 뜬금 퀴즈!'",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_everpsy.jpg",
+    "date": "Jun, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/everpsy_01.jpg",
+      "images/project/2014/contents/everpsy_02.jpg",
+      "images/project/2014/contents/everpsy_03.jpg",
+      "images/project/2014/contents/everpsy_04.jpg",
+      "images/project/2014/contents/everpsy_05.jpg",
+      "images/project/2014/contents/everpsy_06.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "KEB 외환은행 SNS",
+    "caption": "외환은행이 있어 해외가 더 쉬워집니다.",
+    "category": "SOCIAL",
+    "image": "images/project/2014/thumb/thum_kebfb.jpg",
+    "date": "Jun, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/kebfb_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "테딘 패밀리 워터파크",
+    "caption": "테딘 광고 영상 함께보고 푸짐한 선물 받자!",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_ttw.jpg",
+    "date": "Jun, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/ttw_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "SK telecom",
+    "caption": "쓰면 쓸수록 생활이 편해지는 잘! 생긴 SK텔레콤 SMART APP 리플렛",
+    "category": "PRINT",
+    "image": "images/project/2014/thumb/thum_sktapp.jpg",
+    "date": "Apr, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/sktapp_01.jpg",
+      "images/project/2014/contents/sktapp_02.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "서울모터쇼",
+    "caption": "2015 Seoul Motor Show, Move the Dream 포스터 제안",
+    "category": "ILLUSTRATION",
+    "image": "images/project/2014/thumb/thum_motor.jpg",
+    "date": "May, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/motor_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "KEB 외환은행",
+    "caption": "엽전으로 환전하고, 한국 민속촌을 맛보시오! 엽전으로 통하라! 캠페인 제안",
+    "category": "BRANDING",
+    "image": "images/project/2014/thumb/thum_kebk.jpg",
+    "date": "May, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/kebk_01.jpg",
+      "images/project/2014/contents/kebk_02.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "삼성전자",
+    "caption": "삼성 모바일 스토어 성년의 날 이벤트 sns 컨텐츠와 캐릭터 일러스트 제작",
+    "category": "SOCIAL",
+    "image": "images/project/2014/thumb/thum_sday20.jpg",
+    "date": "May, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/sday20_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "삼성지펠아삭",
+    "caption": "지펠아삭의 가장 맛있는 별미 김치를 선택하고 SNS 친구들에게 공유하자! 이벤트",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_zipal_kimchi.jpg",
+    "date": "Apr, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/zipal_kimchi_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "삼성전자",
+    "caption": "삼성 올인원 PC 아티브 원 7 가로수길 리빙페어 캠페인",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_ativone.jpg",
+    "date": "May, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/ativone_01.jpg",
+      "images/project/2014/contents/ativone_02.jpg",
+      "images/project/2014/contents/ativone_03.jpg",
+      "images/project/2014/contents/ativone_04.jpg",
+      "images/project/2014/contents/ativone_05.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "현대자동차",
+    "caption": "불꽃같이 뜨거운 브라질 월드컵 현장취재의 주인공이 될 기회! 월드컵 리포터즈 캠페인",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_hworld.jpg",
+    "date": "Apr, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/hworld_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "삼성카드 홀가분 프로젝트",
+    "caption": "꼭 필요한 것에 집중하면 마음도 인생도 홀가분해 집니다. 삼성카드 홀가분 프로젝트 프로모션",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_holl.jpg",
+    "date": "Mar, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/holl_02.jpg",
+      "images/project/2014/contents/holl_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "MG 손해보험",
+    "caption": "MG 손해보험과 함께, 오늘부터 행복하세요! MG 손해보험 blog 사이트 제작/운영 제안",
+    "category": "BRANDING",
+    "image": "images/project/2014/thumb/thum_mg.jpg",
+    "date": "Feb, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/mg_01.jpg",
+      "images/project/2014/contents/mg_02.jpg",
+      "images/project/2014/contents/mg_03.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "에버랜드",
+    "caption": "에버랜드 LOST VALLEY 홍보대사를 뽑아주세요 캠페인",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_evervally.jpg",
+    "date": "Feb, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/evervally_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "삼성카드",
+    "caption": "삼성카드가 당신의 인생을 홀가분하게 만들어 드립니다. 삼성카드 '홀가분' 한 캠페인 제안",
+    "category": "BRANDING",
+    "image": "images/project/2014/thumb/thum_holpt.jpg",
+    "date": "Jan, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/holpt_01.jpg",
+      "images/project/2014/contents/holpt_02.jpg",
+      "images/project/2014/contents/holpt_03.jpg",
+      "images/project/2014/contents/holpt_03B.jpg",
+      "images/project/2014/contents/holpt_04.jpg",
+      "images/project/2014/contents/holpt_05.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "SK 텔레콤",
+    "caption": "영혼의 한 타를 위한 리그 오브 레전드 종결앱 T LoL 앱 프로모션 사이트",
+    "category": "EVENT",
+    "image": "images/project/2014/thumb/thum_tlol.jpg",
+    "date": "Jan, 2014",
+    "alt": "",
+    "detailImages": [
+      "images/project/2014/contents/tlol_01.jpg"
     ],
     "link": ""
   },
@@ -333,7 +668,7 @@
     "date": "Jul, 2012",
     "alt": "",
     "detailImages": [
-      "images/project/2012/contents/013_file_mts_01.jpg.jpg"
+      "images/project/2012/contents/013_file_mts_01.jpg"
     ],
     "link": ""
   },
