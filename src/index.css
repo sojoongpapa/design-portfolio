@@ -1002,7 +1002,6 @@ body {
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
   border-color: var(--border-medium);
   box-shadow: var(--card-shadow-hover);
 }
