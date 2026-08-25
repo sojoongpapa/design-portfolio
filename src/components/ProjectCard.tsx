@@ -63,9 +63,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
         )}
       </div>
 
-      {/* Media Spacer to reserve 1:1 aspect ratio height naturally */}
-      <div className="card-media-spacer" aria-hidden="true" />
-
       {/* Bottom Visible Details */}
       <div className="card-bottom-info">
         <h3 className="card-bottom-title">{project.title}</h3>
