@@ -54,10 +54,25 @@ export interface ContactInfo {
   note: string;
 }
 
+export interface ProjectSettings {
+  initialVisibleCount: number;
+  loadMoreStep: number;
+}
+
+export interface HomeSettings {
+  recentProjectsCount?: number;
+}
+
+export interface SiteSettings {
+  projects: ProjectSettings;
+  home?: HomeSettings;
+}
+
 export interface PortfolioData {
   profile: ProfileInfo;
   about: AboutInfo;
   contact: ContactInfo;
+  settings: SiteSettings;
   totalProjects: number;
   tickerKeywords?: string[];
   designPillars?: DesignPillar[];

@@ -77,7 +77,7 @@ export const App: React.FC = () => {
     );
   }
 
-  const { profile, about, contact, projects } = data;
+  const { profile, about, contact, projects, settings } = data;
 
   const renderTabContent = (tab: TabType) => {
     switch (tab) {
@@ -87,6 +87,7 @@ export const App: React.FC = () => {
             profile={profile}
             about={about}
             projects={projects}
+            settings={settings.home}
             theme={theme}
             onNavigate={handleTabChange}
             onSelectProject={handleOpenProject}
@@ -96,6 +97,7 @@ export const App: React.FC = () => {
         return (
           <ProjectsSection
             projects={projects}
+            settings={settings.projects}
             onSelectProject={handleOpenProject}
           />
         );

@@ -28,12 +28,13 @@
 
 ## 📝 2. 내용 수정하기 (콘텐츠 관리)
 
-모든 텍스트와 프로젝트 데이터는 **`public/data/`** 폴더 안에 있는 4개의 파일에 모여 있습니다.  
+모든 텍스트와 프로젝트 데이터는 **`public/data/`** 폴더 안에 있는 5개의 파일에 모여 있습니다.  
 이 파일들만 수정하고 저장하면 웹사이트에 즉시 반영됩니다.
 
 ```
 📁 public/
 └── 📁 data/
+    ├── settings.json   👈 프로젝트 노출 개수 및 화면 표시 옵션 설정
     ├── projects.json   👈 프로젝트 작품 목록 및 상세 이미지
     ├── profile.json    👈 상단 메인 소개, 이름, 역할, 키워드
     ├── about.json      👈 상세 소개, 스킬/툴, 클라이언트, 경력 이력
@@ -137,6 +138,28 @@
   "note": "프로젝트 문의 및 협업 제안은 언제든지 환영합니다."
 }
 ```
+
+---
+
+### ⑤ 화면 표시 개수 및 페이징 설정: `settings.json`
+- 파일 위치: `public/data/settings.json`
+- 프로젝트 갤러리와 홈 화면에 한 번에 표시할 카드 개수 및 '더보기' 단위를 설정합니다.
+
+```json
+{
+  "projects": {
+    "initialVisibleCount": 12,
+    "loadMoreStep": 24
+  },
+  "home": {
+    "recentProjectsCount": 6
+  }
+}
+```
+
+* **`projects.initialVisibleCount`**: PROJECTS(프로젝트) 탭에서 처음에 기본으로 보여줄 프로젝트 카드 개수 (예: `12`, `24`)
+* **`projects.loadMoreStep`**: 프로젝트 탭 하단에서 **[+ 더보기(Load More)]** 버튼을 클릭할 때 한 번에 추가로 로드할 개수 (예: `24`)
+* **`home.recentProjectsCount`**: 홈 화면 메인 대표작(Featured) 하단 그리드에 보여줄 서브 프로젝트 개수 (예: `6`)
 
 ---
 

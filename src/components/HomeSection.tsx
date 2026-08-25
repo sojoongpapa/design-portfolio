@@ -8,7 +8,7 @@ import {
   ChevronRight,
   ImageOff,
 } from 'lucide-react';
-import { ProfileInfo, AboutInfo, ProjectItem } from '../types/portfolio';
+import { ProfileInfo, AboutInfo, ProjectItem, HomeSettings } from '../types/portfolio';
 import { TabType } from './Header';
 import { ProjectCard } from './ProjectCard';
 import { ShootingStars } from './ShootingStars';
@@ -18,6 +18,7 @@ interface HomeSectionProps {
   profile: ProfileInfo;
   about: AboutInfo;
   projects: ProjectItem[];
+  settings?: HomeSettings;
   theme?: Theme;
   onNavigate: (tab: TabType) => void;
   onSelectProject: (project: ProjectItem, contextProjects?: ProjectItem[]) => void;
@@ -188,10 +189,13 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
   profile,
   about,
   projects,
+  settings,
   theme = 'light',
   onNavigate,
   onSelectProject,
 }) => {
+  const recentCount = settings?.recentProjectsCount ?? 3;
+
   // 대표작 선별: main: true 항목 중 가장 최근 항목 우선, 없으면 첫 번째 프로젝트
   const heroFeaturedProject = useMemo(() => {
     const mainProjects = projects.filter((p) => p.main === true);
@@ -211,10 +215,10 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
     return projects[0] || null;
   }, [projects]);
 
-  // 서브 대표작 3개: 메인 대표작을 제외한 나머지 프로젝트 중 상위 3개
+  // 서브 대표작: 메인 대표작을 제외한 나머지 프로젝트 중 상위 recentCount개
   const secondaryFeaturedProjects = useMemo(() => {
-    return projects.filter((p) => p !== heroFeaturedProject).slice(0, 3);
-  }, [projects, heroFeaturedProject]);
+    return projects.filter((p) => p !== heroFeaturedProject).slice(0, recentCount);
+  }, [projects, heroFeaturedProject, recentCount]);
 
   const tickerKeywords =
     profile.tickerKeywords && profile.tickerKeywords.length > 0

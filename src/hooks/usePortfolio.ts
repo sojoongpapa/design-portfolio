@@ -1,5 +1,15 @@
 import { useState, useEffect } from 'react';
-import { PortfolioData, ProfileInfo, AboutInfo, ContactInfo, ProjectItem } from '../types/portfolio';
+import { PortfolioData, ProfileInfo, AboutInfo, ContactInfo, ProjectItem, SiteSettings } from '../types/portfolio';
+
+export const defaultSettings: SiteSettings = {
+  projects: {
+    initialVisibleCount: 24,
+    loadMoreStep: 24,
+  },
+  home: {
+    recentProjectsCount: 3,
+  },
+};
 
 const initialEmptyData: PortfolioData = {
   profile: {
@@ -22,6 +32,7 @@ const initialEmptyData: PortfolioData = {
     address: '',
     note: '',
   },
+  settings: defaultSettings,
   totalProjects: 0,
   projects: [],
 };
@@ -47,11 +58,12 @@ export function usePortfolio(): UsePortfolioResult {
         const basePath = import.meta.env.BASE_URL || './';
         const normalizedBase = basePath.endsWith('/') ? basePath : `${basePath}/`;
 
-        const [profileRes, aboutRes, contactRes, projectsRes] = await Promise.all([
+        const [profileRes, aboutRes, contactRes, projectsRes, settingsRes] = await Promise.all([
           fetch(`${normalizedBase}data/profile.json`),
           fetch(`${normalizedBase}data/about.json`),
           fetch(`${normalizedBase}data/contact.json`),
           fetch(`${normalizedBase}data/projects.json`),
+          fetch(`${normalizedBase}data/settings.json`).catch(() => null),
         ]);
 
         if (!profileRes.ok || !aboutRes.ok || !contactRes.ok || !projectsRes.ok) {
@@ -67,12 +79,34 @@ export function usePortfolio(): UsePortfolioResult {
           id: p.id || `project-${index + 1}`,
         }));
 
+        let settings: SiteSettings = defaultSettings;
+        if (settingsRes && settingsRes.ok) {
+          try {
+            const fetchedSettings = await settingsRes.json();
+            settings = {
+              projects: {
+                initialVisibleCount:
+                  fetchedSettings.projects?.initialVisibleCount ?? defaultSettings.projects.initialVisibleCount,
+                loadMoreStep:
+                  fetchedSettings.projects?.loadMoreStep ?? defaultSettings.projects.loadMoreStep,
+              },
+              home: {
+                recentProjectsCount:
+                  fetchedSettings.home?.recentProjectsCount ?? defaultSettings.home?.recentProjectsCount,
+              },
+            };
+          } catch {
+            settings = defaultSettings;
+          }
+        }
+
         if (!isMounted) return;
 
         setData({
           profile,
           about,
           contact,
+          settings,
           totalProjects: projects.length,
           tickerKeywords: profile.tickerKeywords,
           designPillars: profile.designPillars,

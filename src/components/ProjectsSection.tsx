@@ -1,20 +1,29 @@
-import React, { useState, useMemo } from 'react';
-import { ProjectItem } from '../types/portfolio';
+import React, { useState, useMemo, useEffect } from 'react';
+import { ProjectItem, ProjectSettings } from '../types/portfolio';
 import { ProjectCard } from './ProjectCard';
 import { Search, Layers, Filter, X } from 'lucide-react';
 
 interface ProjectsSectionProps {
   projects: ProjectItem[];
+  settings?: ProjectSettings;
   onSelectProject: (project: ProjectItem, contextProjects?: ProjectItem[]) => void;
 }
 
 export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
   projects,
+  settings,
   onSelectProject,
 }) => {
+  const initialCount = settings?.initialVisibleCount ?? 24;
+  const stepCount = settings?.loadMoreStep ?? 24;
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('ALL');
-  const [visibleCount, setVisibleCount] = useState(24);
+  const [visibleCount, setVisibleCount] = useState(initialCount);
+
+  useEffect(() => {
+    setVisibleCount(initialCount);
+  }, [initialCount]);
 
   // 카테고리 명칭 정규화 (빈 값은 '미지정'으로 표기)
   const getCategoryLabel = (cat?: string) => {
@@ -66,13 +75,13 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
   const hasMore = visibleCount < filteredProjects.length;
 
   const handleLoadMore = () => {
-    setVisibleCount((prev) => Math.min(prev + 24, filteredProjects.length));
+    setVisibleCount((prev) => Math.min(prev + stepCount, filteredProjects.length));
   };
 
   const handleResetFilters = () => {
     setSelectedCategory('ALL');
     setSearchQuery('');
-    setVisibleCount(24);
+    setVisibleCount(initialCount);
   };
 
 
@@ -107,7 +116,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
                 key={cat}
                 onClick={() => {
                   setSelectedCategory(cat);
-                  setVisibleCount(24);
+                  setVisibleCount(initialCount);
                 }}
                 className={`filter-pill-btn ${isActive ? 'active' : ''}`}
               >
@@ -137,7 +146,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
             value={searchQuery}
             onChange={(e) => {
               setSearchQuery(e.target.value);
-              setVisibleCount(24);
+              setVisibleCount(initialCount);
             }}
             placeholder="제목, 키워드, 카테고리 검색..."
             className="search-input"
