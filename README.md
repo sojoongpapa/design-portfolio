@@ -50,17 +50,19 @@
 ```json
 [
   {
-    "id": "project-1",
+    "main": true, //메인 index의 대표 작품 설정시 선택
     "title": "작품 제목 (예: 2024 브랜드 리뉴얼)",
     "caption": "작품에 대한 간단한 한 줄 설명",
     "category": "분야 (예: UI/UX, Graphic, Branding)",
-    "date": "제작 연도 (예: 2024)",
-    "image": "images/projects/thumbnail.jpg",
+    "image": "images/project/2018/thumb/xxxxx",
+    "date": "Jan, 2018",
+    "alt": "",
     "detailImages": [
-      "images/projects/detail-01.jpg",
-      "images/projects/detail-02.jpg"
-    ]
-  }
+      "images/project/2018/contents/xxxxxx",
+      "images/project/2018/contents/xxxxxx"
+    ],
+    "link": "외부로 링크"
+  },
 ]
 ```
 
@@ -75,14 +77,14 @@
 
 [ Category 예시 ]
 - EVENT: 이벤트 웹사이트, 참여형 프로모션 페이지, SNS 이벤트 페이지
-- BRANDING: 브랜드 비주얼 일러스트, CI/BI, 키비주얼
+- BRANDING: 브랜드 비주얼 일러스트, CI/BI, 키비주얼, 경쟁 PT 시안, 제안서용 디자인 목업
 - SOCIAL: 인스타그램·페이스북 카드뉴스, SNS 배너, 콘텐츠 시리즈
 - WEB: 기업 사이트, 브랜드 사이트, 쇼핑몰 리뉴얼
 - ILLUSTRATION : 일러스트 제작
 - PRINT: 카탈로그, 브로슈어, 리플렛
 - VIDEO: 광고 영상, 브랜드 필름, 프로모션 영상
-- PITCH: 경쟁 PT 시안, 제안서용 디자인 목업
 - ETC: 분류가 애매한 소규모 작업, 실험적 프로젝트, 사진 촬영
+- E-COMMERCE : or COMMERCE 중
 
 
 ---
