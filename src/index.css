@@ -997,6 +997,8 @@ body {
   overflow: hidden;
   border: 1px solid var(--border-subtle);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
   transition: var(--transition-smooth);
   box-shadow: var(--card-shadow);
 }
@@ -1006,12 +1008,15 @@ body {
   box-shadow: var(--card-shadow-hover);
 }
 
+/* Background Media Wrap (Covers entire card) */
 .card-media-wrap {
-  position: relative;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%;
   overflow: hidden;
   background: var(--card-media-bg);
+  z-index: 0;
 }
 
 .card-img {
@@ -1040,17 +1045,54 @@ body {
   text-align: center;
 }
 
-/* Card Hover Overlay */
+/* Media Spacer: Naturally reserves 1:1 image area height */
+.card-media-spacer {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* Card Info Bottom (Always Visible until hover) */
+.card-bottom-info {
+  position: relative;
+  z-index: 1;
+  padding: 14px 16px;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .card-bottom-info {
+    padding: 16px 20px;
+  }
+}
+
+.project-card:hover .card-bottom-info {
+  opacity: 0;
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+/* Card Hover Overlay (Full Card Coverage) */
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.85) 60%, rgba(15, 23, 42, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.85) 55%, rgba(15, 23, 42, 0.98) 100%);
   opacity: 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  transition: var(--transition-smooth);
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @media (min-width: 768px) {
@@ -1065,7 +1107,7 @@ body {
 
 .card-overlay-content {
   transform: translateY(12px);
-  transition: var(--transition-smooth);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .project-card:hover .card-overlay-content {
@@ -1099,22 +1141,6 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-weight: 300;
-}
-
-/* Card Info Bottom (Always Visible) */
-.card-bottom-info {
-  padding: 14px 16px;
-  border-top: 1px solid var(--border-subtle);
-  background: var(--bg-surface);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-@media (min-width: 768px) {
-  .card-bottom-info {
-    padding: 16px 20px;
-  }
 }
 
 .card-bottom-title {

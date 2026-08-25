@@ -27,6 +27,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
       }}
       aria-label={`${project.title} - view details`}
     >
+      {/* Background Full Media Layer */}
       <div className="card-media-wrap">
         {/* Loading skeleton */}
         {!imageLoaded && !imageError && (
@@ -60,36 +61,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
             <span style={{ fontSize: '0.65rem', color: '#71717a' }}>Image Pending</span>
           </div>
         )}
-
-        {/* Hover Overlay */}
-        <div className="card-overlay">
-          <div className="card-overlay-content">
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <span className="card-tag">
-                {project.category?.trim() || '미지정'}
-              </span>
-              <div style={{
-                width: 28,
-                height: 28,
-                borderRadius: '50%',
-                background: 'rgba(255, 255, 255, 0.2)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#fff'
-              }}>
-                <ArrowUpRight size={14} />
-              </div>
-            </div>
-
-            <h3 className="card-title-hover">{project.title}</h3>
-
-            {project.caption && (
-              <p className="card-desc-hover">{project.caption}</p>
-            )}
-          </div>
-        </div>
       </div>
+
+      {/* Media Spacer to reserve 1:1 aspect ratio height naturally */}
+      <div className="card-media-spacer" aria-hidden="true" />
 
       {/* Bottom Visible Details */}
       <div className="card-bottom-info">
@@ -97,6 +72,35 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
         <p className="card-bottom-caption">
           {project.caption || project.date || 'Design Project'}
         </p>
+      </div>
+
+      {/* Hover Overlay (Full Card) */}
+      <div className="card-overlay">
+        <div className="card-overlay-content">
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <span className="card-tag">
+              {project.category?.trim() || '미지정'}
+            </span>
+            <div style={{
+              width: 28,
+              height: 28,
+              borderRadius: '50%',
+              background: 'rgba(255, 255, 255, 0.2)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#fff'
+            }}>
+              <ArrowUpRight size={14} />
+            </div>
+          </div>
+
+          <h3 className="card-title-hover">{project.title}</h3>
+
+          {project.caption && (
+            <p className="card-desc-hover">{project.caption}</p>
+          )}
+        </div>
       </div>
     </article>
   );
