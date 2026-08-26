@@ -1,5 +1,124 @@
 [
   {
+    "title": "Grand Hyatt Jeju",
+    "caption": "그랜드 하얏트 제주 호텔의 다양한 프로모션 배너",
+    "category": "EVENT",
+    "image": "images/project/2023/hyatt_bnr_thumb.jpg",
+    "date": "May, 2023",
+    "alt": "",
+    "detailImages": [
+      "images/project/2023/hyatt_bnr_01.jpg",
+      "images/project/2023/hyatt_bnr_02.jpg",
+      "images/project/2023/hyatt_bnr_03.jpg",
+      "images/project/2023/hyatt_bnr_04.jpg",
+      "images/project/2023/hyatt_bnr_05.jpg",
+      "images/project/2023/hyatt_bnr_06.jpg",
+      "images/project/2023/hyatt_bnr_07.jpg",
+      "images/project/2023/hyatt_bnr_08.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Grand Hyatt Jeju",
+    "caption": "HAN 컬랙션 메뉴 신규 오픈",
+    "category": "WEB",
+    "image": "images/project/2023/han_collweb_thumb.jpg",
+    "date": "Feb, 2023",
+    "alt": "",
+    "detailImages": [
+      "images/project/2023/han_collweb_01.jpg",
+      "images/project/2023/han_collweb_02.jpg",
+      "images/project/2023/han_collweb_03.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Grand Hyatt Jeju",
+    "caption": "제주드림타워 홈페이지 갤러리 리뉴얼, 드림스테이 메뉴 기획 제작",
+    "category": "WEB",
+    "image": "images/project/2022/ht_gallery_thumb.jpg",
+    "date": "Jun, 2022",
+    "alt": "",
+    "detailImages": [
+      "images/project/2022/ht_gallery_01.jpg",
+      "images/project/2022/ht_gallery_02.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Musinsa Trading",
+    "caption": "잔스포츠 (jansports) 쇼핑몰 웹사이트 디자인, cafe24 세팅, 퍼블리싱",
+    "category": "WEB",
+    "image": "images/project/2020/jansports_web_thumb.jpg",
+    "date": "Aug, 2020",
+    "alt": "",
+    "detailImages": [
+      "images/project/2020/jansports_web_01.jpg",
+      "images/project/2020/jansports_web_02.jpg",
+      "images/project/2020/jansports_web_03.jpg",
+      "images/project/2020/jansports_web_04.jpg",
+      "images/project/2020/jansports_web_05.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Musinsa Trading",
+    "caption": "스프리스 상세 페이지 디자인 (www.strism.com) 2안",
+    "category": "E-COMMERCE",
+    "image": "images/project/2020/spris_age_A_thumb.jpg",
+    "date": "Aug, 2020",
+    "alt": "",
+    "detailImages": [
+      "images/project/2020/spris_age_A.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Musinsa Trading",
+    "caption": "신규 런칭 브랜드 그라미치 프로모션 상품 촬영본 보정",
+    "category": "E-COMMERCE",
+    "image": "images/project/2020/gramicci_thumb.jpg",
+    "date": "Aug, 2020",
+    "alt": "",
+    "detailImages": [
+      "images/project/2020/gramicci_01.jpg",
+      "images/project/2020/gramicci_02.jpg",
+      "images/project/2020/gramicci_03.jpg",
+      "images/project/2020/gramicci_04.jpg",
+      "images/project/2020/gramicci_05.jpg",
+      "images/project/2020/gramicci_06.jpg",
+      "images/project/2020/gramicci_07.jpg",
+      "images/project/2020/gramicci_08.jpg",
+      "images/project/2020/gramicci_09.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Musinsa Trading",
+    "caption": "스프리스 상세 페이지 디자인 (www.strism.com)",
+    "category": "E-COMMERCE",
+    "image": "images/project/2020/spris_age_B_thumb.jpg",
+    "date": "Aug, 2020",
+    "alt": "",
+    "detailImages": [
+      "images/project/2020/spris_age_B.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "MOTHER-K",
+    "caption": "세정제 & 소독제 브랜드 기획전",
+    "category": "E-COMMERCE",
+    "image": "images/project/2020/mk_brand_thumb.jpg",
+    "date": "May, 2020",
+    "alt": "",
+    "detailImages": [
+      "images/project/2020/mk_brand_01.jpg",
+      "images/project/2020/mk_brand_02.jpg"
+    ],
+    "link": ""
+  },
+  {
     "title": "넷마블",
     "caption": "글로벌 대표 게임 브랜드 넷마블의 디자인 외주 연간 운영 제안",
     "category": "BRANDING",

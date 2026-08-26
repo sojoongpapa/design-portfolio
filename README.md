@@ -84,7 +84,7 @@
 - PRINT: 카탈로그, 브로슈어, 리플렛
 - VIDEO: 광고 영상, 브랜드 필름, 프로모션 영상
 - ETC: 분류가 애매한 소규모 작업, 실험적 프로젝트, 사진 촬영
-- E-COMMERCE : or COMMERCE 중
+- E-COMMERCE : 온라인 쇼핑몰
 
 
 ---
