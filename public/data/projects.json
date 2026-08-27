@@ -1,5 +1,217 @@
 [
   {
+    "main": 2,
+    "title": "Jeis Mobillity",
+    "caption": "EV모션 웹사이트 비쥬얼 ai 콘텐츠 제작",
+    "category": "EVENT",
+    "image": "images/project/2025/evmotion_ai_thumb.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/evmotion_ai_01.jpg",
+      "images/project/2025/evmotion_ai_02.jpg",
+      "images/project/2025/evmotion_ai_03.jpg",
+      "images/project/2025/evmotion_ai_04_1.jpg",
+      "images/project/2025/evmotion_ai_04_2.jpg",
+      "images/project/2025/evmotion_ai_04_3.jpg",
+      "images/project/2025/evmotion_ai_04_4.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "캠핑카 개조, 왜 이티밴이 쉬울까? - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_12.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)12.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/Qb9W2MZdzwU"
+    ],
+    "link": ""
+  },
+  {
+    "main": 3,
+    "title": "Jeis Mobillity",
+    "caption": "캠핑카의 새로운 기준 전기자동차 이티밴 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_11.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)11.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/ah1qufvaBN4"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 VS PV5 다인승 보조금 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_10.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)10.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/Y1YAOGysnjM"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 VS PV5 적재함 높이와 크기 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_09.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)09.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/s4rNrv7e92A"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 VS PV5 목공용 합판 적재 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_08.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)08.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/FvpNkdRF9GY"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "V2L 이티밴 무료 VS PV5 유료 옵션 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_07.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)07.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/oVLIbj7yo58"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 VS PV5 출고기간 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_06.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)06.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/7qgC7H-j5Rk"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 VS PV5 전륜 훌륜 구동 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_05.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)05.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/XVTzmUZ4L6M"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 VS PV5 실구매 가격 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_04.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)04.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/ieaUl_1QNQk"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 VS PV5 적재용량 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_03.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)03.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/kU2D_XIrAJE"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 VS PV5 탑승인원 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_02.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)02.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/shorts/BaPmEXqcqhs"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 VS PV5 주행거리 비교 숏츠 - 생성형 AI와 TTS 음성 기술을 활용한 소스 제작 및 편집을 통해 효과적인 이티밴 홍보 숏츠 영상을 제작",
+    "category": "VIDEO",
+    "image": "images/project/2025/youtube_ex_thumb_01.jpg",
+    "date": "Jun, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/youtube_ex_thumb(1080)01.jpg"
+    ],
+    "videos": [
+      "https: //www.youtube.com/shorts/zPpHgT7z7KM"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "제이스모빌리티 홈페이지 프로모션 팝업 모음",
+    "category": "EVENT",
+    "image": "images/project/2025/jeis_pop_thumb.jpg",
+    "date": "May, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/jeis_pop_01.jpg"
+    ],
+    "link": ""
+  },
+  {
     "title": "Jeis Mobillity",
     "caption": "이티밴 EX 유튜브 홍보 숏츠 샘플 영상",
     "category": "VIDEO",
@@ -53,6 +265,7 @@
     "link": ""
   },
   {
+    "main": 4,
     "title": "Jeis Mobillity",
     "caption": "2025년형 이티밴 EX 브로슈어",
     "category": "PRINT",
@@ -347,9 +560,10 @@
       "images/project/2023/han_collweb_02.jpg",
       "images/project/2023/han_collweb_03.jpg"
     ],
-    "link": ""
+    "link": "https://www.jejudreamtower.com/kor/things/ShopOverview.jdt"
   },
   {
+    "main": 5,
     "title": "Grand Hyatt Jeju",
     "caption": "제주드림타워 홈페이지 갤러리 리뉴얼, 드림스테이 메뉴 기획 제작",
     "category": "WEB",
@@ -360,7 +574,7 @@
       "images/project/2022/ht_gallery_01.jpg",
       "images/project/2022/ht_gallery_02.jpg"
     ],
-    "link": ""
+    "link": "https://www.jejudreamtower.com/kor/"
   },
   {
     "title": "Musinsa Trading",
@@ -376,7 +590,7 @@
       "images/project/2020/jansports_web_04.jpg",
       "images/project/2020/jansports_web_05.jpg"
     ],
-    "link": ""
+    "link": "https://jansport.co.kr/"
   },
   {
     "title": "Musinsa Trading",
@@ -391,6 +605,7 @@
     "link": ""
   },
   {
+    "main": 6,
     "title": "Musinsa Trading",
     "caption": "신규 런칭 브랜드 그라미치 프로모션 상품 촬영본 보정",
     "category": "E-COMMERCE",
@@ -480,6 +695,7 @@
     "link": ""
   },
   {
+    "main": 7,
     "title": "롯데칠성음료",
     "caption": "레몬1000 C+ 투명한 사진관 캠페인",
     "category": "EVENT",
@@ -642,6 +858,7 @@
     "link": ""
   },
   {
+    "main": 8,
     "title": "SK telecom",
     "caption": "T로밍 한, 중, 일 Pass 출시 기념 Special Gift EVENT 세상에 없던 국민 요금제 프로모션",
     "category": "EVENT",
@@ -1087,6 +1304,7 @@
     "link": ""
   },
   {
+    "main": 10,
     "title": "Maxim",
     "caption": "화이트데이에는 화이트골드로 '커피향 가득한 사랑을 전하세요!' 캠페인",
     "category": "EVENT",
@@ -1581,6 +1799,7 @@
     "link": ""
   },
   {
+    "main": 9,
     "title": "SC 스탠다드 캐피탈",
     "caption": "아이스탠다드론 i와 아이스탠다드론 Q의 랜딩 페이지 제작",
     "category": "WEB",
