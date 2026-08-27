@@ -1,6 +1,176 @@
 [
   {
-    "main": 3,
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 EX 유튜브 홍보 숏츠 샘플 영상",
+    "category": "VIDEO",
+    "image": "images/project/2025/shots_sample_thumb.jpg",
+    "date": "May, 2025",
+    "alt": "",
+    "detailImages": [
+      ""
+    ],
+    "videos": [
+      "https://youtube.com/shorts/FfftFC0h8sE?feature=share",
+      "https://youtube.com/shorts/1Iyn3Wa4N5o?feature=share"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "최신 기술로 더욱 강렭해진 이티밴 엑스 사전예약 오픈 이벤트",
+    "category": "EVENT",
+    "image": "images/project/2025/exopen_thumb.jpg",
+    "date": "Mar, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/exopen_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 EX 홈페이지 신규 상세 소개 메뉴",
+    "category": "WEB",
+    "image": "images/project/2025/etvanex_web_thumb.jpg",
+    "date": "Feb, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/etvanex_web_01.jpg"
+    ],
+    "link": "https://jeismobility.com/model/ex.asp"
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "2025 이티밴 EX OTA 모바일 APP 샘플 화면 구성안",
+    "category": "BRANDING",
+    "image": "images/project/2025/app_etvanex_thumb.jpg",
+    "date": "Feb, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/app_etvanex_01.jpg",
+      "images/project/2025/app_etvanex_02.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "2025년형 이티밴 EX 브로슈어",
+    "category": "PRINT",
+    "image": "images/project/2025/ex_Brochure_thumb.jpg",
+    "date": "Feb, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/ex_Brochure_01.jpg",
+      "images/project/2025/ex_Brochure_02.jpg",
+      "images/project/2025/ex_Brochure_03_1.jpg",
+      "images/project/2025/ex_Brochure_03_2.jpg",
+      "images/project/2025/ex_Brochure_03_3.jpg",
+      "images/project/2025/ex_Brochure_03_4.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 EX(2025) 신제품 홍보용 메인 키 비주얼(Key Visual) 디자인 제작",
+    "category": "BRANDING",
+    "image": "images/project/2025/artwork_ex_thumb.jpg",
+    "date": "Feb, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/artwork_ex_01.jpg",
+      "images/project/2025/artwork_ex_02.jpg",
+      "images/project/2025/artwork_ex_03.jpg",
+      "images/project/2025/artwork_ex_04.jpg",
+      "images/project/2025/artwork_ex_05.jpg",
+      "images/project/2025/artwork_ex_06.jpg",
+      "images/project/2025/artwork_ex_07.jpg",
+      "images/project/2025/artwork_ex_08.jpg",
+      "images/project/2025/artwork_ex_09.jpg",
+      "images/project/2025/artwork_ex_10.jpg",
+      "images/project/2025/artwork_ex_11.jpg",
+      "images/project/2025/artwork_ex_12.jpg",
+      "images/project/2025/artwork_ex_13.jpg",
+      "images/project/2025/artwork_ex_14.jpg",
+      "images/project/2025/artwork_ex_15.jpg",
+      "images/project/2025/artwork_ex_16.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "2025 새해맞이 홍성 국산 브레이크패드 할인 프로모션 스마트 스토어 상세설명",
+    "category": "E-COMMERCE",
+    "image": "images/project/2025/hongsung_shop_thumb.jpg",
+    "date": "Jan, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/hongsung_shop_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "2025 새해맞이 홍성 국산 브레이크패드 할인 프로모션",
+    "category": "EVENT",
+    "image": "images/project/2025/hongsung_event_thumb.jpg",
+    "date": "Jan, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/hongsung_event_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "2025 신년맞이 고객 안심 무상 서비스 캠페인",
+    "category": "EVENT",
+    "image": "images/project/2025/Customer_thumb.jpg",
+    "date": "Jan, 2025",
+    "alt": "",
+    "detailImages": [
+      "images/project/2025/Customer_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 LIFE 네이버 스마트 스토어 상세 설명페이지",
+    "category": "E-COMMERCE",
+    "image": "images/project/2024/etvanlife_shop_thumb.jpg",
+    "date": "Nov, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/etvanlife_shop_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 눈길 안전 운행 TIP 배너",
+    "category": "EVENT",
+    "image": "images/project/2024/winter_etvan_thumb.jpg",
+    "date": "Nov, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/winter_etvan_01.jpg",
+      "images/project/2024/winter_etvan_02.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 LIFFE 최저가 가격 홍보 배너",
+    "category": "EVENT",
+    "image": "images/project/2024/cam_price_thumb.jpg",
+    "date": "Oct, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/cam_price_01.jpg",
+      "images/project/2024/cam_price_02.jpg"
+    ],
+    "link": ""
+  },
+  {
     "title": "Jeis Mobillity",
     "caption": "25년형 이티밴 엑스 엠블럼 시안 ",
     "category": "BRANDING",
@@ -13,7 +183,6 @@
     "link": ""
   },
   {
-    "main": 4,
     "title": "Jeis Mobillity",
     "caption": "시티스 'S3' 출시 홍보 상세 페이지 기획",
     "category": "BRANDING",
@@ -26,7 +195,6 @@
     "link": ""
   },
   {
-    "main": 7,
     "title": "Jeis Mobillity",
     "caption": "이티밴 프로 / 미니 구글 홍보 배너",
     "category": "EVENT",
@@ -56,7 +224,6 @@
     "link": ""
   },
   {
-    "main": 5,
     "title": "Jeis Mobillity",
     "caption": "이티밴 LIFE 캠퍼밴 출시 온/오프라인 카탈로그 제작",
     "category": "PRINT",
@@ -100,7 +267,6 @@
     "link": ""
   },
   {
-    "main": 2,
     "title": "Jeis Mobillity",
     "caption": "새로운 캠핑의 시작, ‘이티밴 LIFE’ 공식 홈페이지 오픈!",
     "category": "WEB",
@@ -125,7 +291,6 @@
     "link": ""
   },
   {
-    "main": 6,
     "title": "CITIS",
     "caption": "전기 바이크 플랫폼 CITIS 브랜드 로고 시안",
     "category": "BRANDING",
@@ -152,7 +317,6 @@
     "link": ""
   },
   {
-    "main": 2,
     "title": "Grand Hyatt Jeju",
     "caption": "그랜드 하얏트 제주 호텔의 다양한 프로모션 배너",
     "category": "EVENT",
