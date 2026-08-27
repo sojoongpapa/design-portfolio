@@ -2804,11 +2804,11 @@ body {
 }
 
 [data-theme="light"] .hero-aurora-1 {
-  background: radial-gradient(circle, rgba(180, 83, 9, 0.12) 0%, rgba(245, 158, 11, 0.05) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.12) 0%, rgba(216, 180, 254, 0.10) 30%, transparent 70%);
 }
 
 [data-theme="light"] .hero-aurora-2 {
-  background: radial-gradient(circle, rgba(79, 70, 229, 0.09) 0%, rgba(99, 102, 241, 0.04) 60%, transparent 80%);
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.18) 0%, rgba(192, 132, 252, 0.08) 55%, transparent 75%);
 }
 
 /* ==========================================================================
@@ -2835,11 +2835,13 @@ body {
   display: block;
   background: radial-gradient(
     circle,
-    rgba(245, 158, 11, 0.32) 0%,
-    rgba(217, 119, 6, 0.14) 30%,
-    rgba(245, 158, 11, 0.05) 55%,
-    rgba(251, 191, 36, 0.015) 75%,
-    transparent 85%
+    rgba(250, 204, 21, 0.45) 0%,
+    rgba(251, 191, 36, 0.22) 7%,
+    rgba(216, 180, 254, 0.30) 20%,
+    rgba(192, 132, 252, 0.22) 48%,
+    rgba(168, 85, 247, 0.10) 72%,
+    rgba(233, 213, 255, 0.02) 86%,
+    transparent 94%
   );
 }
 
