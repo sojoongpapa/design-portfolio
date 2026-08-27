@@ -16,7 +16,7 @@ export const MouseGlow: React.FC<MouseGlowProps> = () => {
     let currentY = targetY;
     let targetScale = 1.0;
     let currentScale = 1.0;
-    let idleTimer: NodeJS.Timeout | null = null;
+    let idleTimer: ReturnType<typeof setTimeout> | null = null;
     let animationFrameId: number;
 
     const handlePointerMove = (e: PointerEvent) => {
