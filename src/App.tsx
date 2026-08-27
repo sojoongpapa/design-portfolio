@@ -76,7 +76,8 @@ export const App: React.FC = () => {
   useEffect(() => {
     if (!data || !data.projects || data.projects.length === 0) return;
 
-    const match = location.pathname.match(/^\/project\/([^/]+)/);
+    const cleanPath = location.pathname.replace(/\/+$/, '') || '/';
+    const match = cleanPath.match(/^\/project\/([^/]+)/);
     if (match) {
       const rawId = decodeURIComponent(match[1]);
       const found = data.projects.find(
@@ -87,9 +88,9 @@ export const App: React.FC = () => {
       );
       if (found) {
         setSelectedProject(found);
-        if (modalProjects.length === 0) {
-          setModalProjects(data.projects);
-        }
+        setModalProjects(data.projects);
+      } else {
+        setSelectedProject(null);
       }
     } else {
       setSelectedProject(null);
@@ -121,7 +122,7 @@ export const App: React.FC = () => {
     } else if (data?.projects) {
       setModalProjects(data.projects);
     }
-    const projectId = project.id || encodeURIComponent(project.title);
+    const projectId = project.id !== undefined ? String(project.id) : encodeURIComponent(project.title);
     navigate(`/project/${projectId}`);
   };
 
@@ -130,11 +131,11 @@ export const App: React.FC = () => {
   };
 
   const handleSelectProjectInModal = (project: ProjectItem) => {
-    const projectId = project.id || encodeURIComponent(project.title);
+    const projectId = project.id !== undefined ? String(project.id) : encodeURIComponent(project.title);
     navigate(`/project/${projectId}`);
   };
 
-  if (loading && !data) {
+  if (loading || !data || data.projects.length === 0) {
     return (
       <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ textAlign: 'center' }}>
@@ -156,6 +157,7 @@ export const App: React.FC = () => {
       </div>
     );
   }
+
 
   const { profile, about, contact, projects, settings } = data;
 
