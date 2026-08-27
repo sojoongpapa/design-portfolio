@@ -1,5 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { ProjectItem } from '../types/portfolio';
+import { extractProjectVideos } from '../utils/youtube';
+import { YouTubeMediaSection } from './YouTubePlayer';
 import { X, ChevronLeft, ChevronRight, LayoutGrid, Calendar, Layers, ImageOff, ExternalLink, Globe } from 'lucide-react';
 
 interface ProjectModalProps {
@@ -114,13 +116,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
     }
   }, [project.id, project.title]);
 
+  // Determine list of project videos (YouTube & Shorts)
+  const projectVideos = extractProjectVideos(project);
+
   // Determine list of detail images
   const detailList = (project.detailImages || []).filter((url) => typeof url === 'string' && url.trim() !== '');
   const fallbackSingle = project.image?.trim();
 
+  // detailImages가 명시된 경우만 사용하며, 영상도 없고 상세 이미지도 없을 때만 대표 썸네일을 fallback으로 사용
   const displayImages = detailList.length > 0
     ? detailList
-    : (fallbackSingle ? [fallbackSingle] : []);
+    : (projectVideos.length === 0 && fallbackSingle ? [fallbackSingle] : []);
 
   const handleOverlayScroll = (e: React.UIEvent<HTMLDivElement>) => {
     const scrollTop = e.currentTarget.scrollTop;
@@ -229,26 +235,42 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           )}
         </header>
 
+        {/* Project Videos Section (YouTube & Shorts) */}
+        {projectVideos.length > 0 && (
+          <YouTubeMediaSection videos={projectVideos} />
+        )}
+
         {/* Detail Images Flow */}
-        <div className="detail-images-container">
-          <div className="detail-images-body">
-            {displayImages.length > 0 ? (
-              displayImages.map((imgUrl, idx) => (
-                <DetailImageItem
-                  key={`${project.id || project.title}-${idx}-${imgUrl}`}
-                  src={imgUrl}
-                  alt={`${project.title} - detail ${idx + 1}`}
-                  index={idx}
-                />
-              ))
-            ) : (
-              <div className="detail-empty-placeholder">
-                <ImageOff size={36} style={{ opacity: 0.3 }} />
-                <p>No detail images available for this project.</p>
+        {(displayImages.length > 0 || projectVideos.length === 0) && (
+          <div className="detail-images-container">
+            {displayImages.length > 0 && projectVideos.length > 0 && (
+              <div className="detail-section-title-wrap">
+                <h2 className="detail-section-title">
+                  <Layers size={16} className="title-icon" />
+                  <span>PROJECT IMAGES ({displayImages.length})</span>
+                </h2>
               </div>
             )}
+
+            <div className="detail-images-body">
+              {displayImages.length > 0 ? (
+                displayImages.map((imgUrl, idx) => (
+                  <DetailImageItem
+                    key={`${project.id || project.title}-${idx}-${imgUrl}`}
+                    src={imgUrl}
+                    alt={`${project.title} - detail ${idx + 1}`}
+                    index={idx}
+                  />
+                ))
+              ) : (
+                <div className="detail-empty-placeholder">
+                  <ImageOff size={36} style={{ opacity: 0.3 }} />
+                  <p>등록된 미디어가 없습니다.</p>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Bottom Navigation */}
         <div className="detail-bottom-nav">

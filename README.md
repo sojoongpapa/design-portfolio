@@ -61,18 +61,26 @@
       "images/project/2018/contents/xxxxxx",
       "images/project/2018/contents/xxxxxx"
     ],
+    "videos": [
+      "https://www.youtube.com/watch?v=유튜브영상ID",
+      "https://www.youtube.com/shorts/쇼츠영상ID"
+    ],
     "link": "외부로 링크"
-  },
+  }
 ]
 ```
 
-* **`id`**: 프로젝트의 고유 식별값 (중복되지 않게 `project-1`, `project-2` 등으로 지정)
 * **`title`**: 갤러리 카드와 상세 화면에 표시될 작품 이름
 * **`caption`**: 마우스를 올렸을 때 나타나는 요약 설명
 * **`category`**: 필터링 및 태그로 사용되는 카테고리명
 * **`date`**: 작업 연도
 * **`image`**: 갤러리 목록에 노출될 대표 썸네일 이미지 경로
-* **`detailImages`**: 작품을 클릭했을 때 모달 창에 세로로 쭉 펼쳐지는 고화질 상세 이미지들의 목록
+* **`detailImages`**: 작품을 클릭했을 때 모달 창에 세로로 펼쳐지는 상세 이미지 경로 목록
+* **`videos`**: 모달 상세에 표시될 유튜브 영상 링크 (일반 가로 영상 및 세로 숏츠 영상 지원, 단일 문자열 또는 복수 배열 등록 가능)
+  - 일반 영상 예시: `"https://www.youtube.com/watch?v=..."` 또는 `"https://youtu.be/..."` (16:9 와이드 플레이어로 표시)
+  - 숏츠 영상 예시: `"https://www.youtube.com/shorts/..."` (9:16 스마트폰 세로 비율 플레이어로 표시)
+  - 영상 링크를 여러 개 등록할 경우 상세 이미지처럼 순서대로 모두 표시되며, 숏츠 영상이 여러 개인 경우 세련된 반응형 그리드로 정렬됩니다.
+* **`link`**: 웹사이트 바로가기 외부 링크 (선택 사항)
 
 
 [ Category 예시 ]

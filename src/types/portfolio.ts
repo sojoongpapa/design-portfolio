@@ -5,6 +5,8 @@ export interface ProjectItem {
   category: string;              // 카테고리
   image: string;                 // 목록 썸네일 이미지 URL/경로
   detailImages?: string[];       // 상세 뷰 이미지 URL/경로 목록
+  videos?: string[] | string;    // 유튜브 영상 링크 (단일 URL 또는 URL 배열)
+  youtubeUrls?: string[] | string; // 유튜브 영상 링크 별칭 지원
   date: string;                  // 제작일
   alt: string;                   // 이미지 대체 텍스트
   link?: string;                 // 웹사이트 바로가기 링크 (새 창 연결)

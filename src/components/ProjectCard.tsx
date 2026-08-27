@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ProjectItem } from '../types/portfolio';
-import { ImageOff, ArrowUpRight } from 'lucide-react';
+import { extractProjectVideos } from '../utils/youtube';
+import { ImageOff, ArrowUpRight, Play } from 'lucide-react';
 
 interface ProjectCardProps {
   project: ProjectItem;
@@ -12,6 +13,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const imageSrc = project.image?.trim();
+  const hasVideos = extractProjectVideos(project).length > 0;
 
   return (
     <article
@@ -75,9 +77,31 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
       <div className="card-overlay">
         <div className="card-overlay-content">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span className="card-tag">
-              {project.category?.trim() || '미지정'}
-            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <span className="card-tag">
+                {project.category?.trim() || '미지정'}
+              </span>
+              {hasVideos && (
+                <span
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 3,
+                    padding: '2px 7px',
+                    borderRadius: 9999,
+                    background: 'rgba(255, 0, 0, 0.25)',
+                    color: '#fff',
+                    fontSize: '0.65rem',
+                    fontWeight: 700,
+                    backdropFilter: 'blur(4px)',
+                  }}
+                  title="영상 포함 프로젝트"
+                >
+                  <Play size={9} fill="currentColor" />
+                  <span>VIDEO</span>
+                </span>
+              )}
+            </div>
             <div style={{
               width: 28,
               height: 28,
