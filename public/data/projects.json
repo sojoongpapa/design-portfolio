@@ -1,5 +1,127 @@
 [
   {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 프로 / 미니 구글 홍보 배너",
+    "category": "EVENT",
+    "image": "images/project/2024/googleAD_thumb.jpg",
+    "date": "Sep, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/googleAD_01.jpg",
+      "images/project/2024/googleAD_02.jpg",
+      "images/project/2024/googleAD_03.jpg",
+      "images/project/2024/googleAD_04.jpg",
+      "images/project/2024/googleAD_05.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "캠퍼밴 전국 지역별 가격 혜택 안내 홍보 전단지",
+    "category": "PRINT",
+    "image": "images/project/2024/cam_jdj_thumb.jpg",
+    "date": "Sep, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/cam_jdj_01.jpg",
+      "images/project/2024/cam_jdj_02.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 LIFE 캠퍼밴 출시 온/오프라인 카탈로그 제작",
+    "category": "PRINT",
+    "image": "images/project/2024/webcadal_camper_thumb.jpg",
+    "date": "Sep, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/webcadal_camper_01.jpg",
+      "images/project/2024/webcadal_camper_02.jpg",
+      "images/project/2024/webcadal_camper_03.jpg",
+      "images/project/2024/webcadal_camper_04.jpg",
+      "images/project/2024/webcadal_camper_05.jpg",
+      "images/project/2024/webcadal_camper_06.jpg",
+      "images/project/2024/webcadal_camper_07.jpg",
+      "images/project/2024/webcadal_camper_08.jpg",
+      "images/project/2024/webcadal_camper_09.jpg",
+      "images/project/2024/webcadal_camper_10.jpg",
+      "images/project/2024/webcadal_camper_11.jpg",
+      "images/project/2024/webcadal_camper_12.jpg",
+      "images/project/2024/webcadal_camper_13.jpg",
+      "images/project/2024/webcadal_camper_14.jpg",
+      "images/project/2024/webcadal_camper_15.jpg",
+      "images/project/2024/webcadal_camper_16.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 LIFE 캠퍼밴 출시 기념 공식 홍보 리플렛(4P) 제작의 건",
+    "category": "PRINT",
+    "image": "images/project/2024/camper_bro_thumb.jpg",
+    "date": "Aug, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/camper_bro_01.jpg",
+      "images/project/2024/camper_bro_02_1.jpg",
+      "images/project/2024/camper_bro_02_2.jpg",
+      "images/project/2024/camper_bro_02_3.jpg",
+      "images/project/2024/camper_bro_02_4.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "새로운 캠핑의 시작, ‘이티밴 LIFE’ 공식 홈페이지 오픈!",
+    "category": "WEB",
+    "image": "images/project/2024/campervan_web_thumb.jpg",
+    "date": "Aug, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/campervan_web_01.jpg"
+    ],
+    "link": "https://jeismobility.com/model/life.asp"
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "2024 이티밴 프로/미니 지인 추천 이벤트",
+    "category": "EVENT",
+    "image": "images/project/2024/friend_evt_thumb.jpg",
+    "date": "Aug, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/friend_evt_01.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "CITIS",
+    "caption": "전기 바이크 플랫폼 CITIS 브랜드 로고 시안",
+    "category": "BRANDING",
+    "image": "images/project/2024/citislogo_thumb.jpg",
+    "date": "Aug, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/citislogo_01.jpg",
+      "images/project/2024/citislogo_02.jpg",
+      "images/project/2024/citislogo_03.jpg"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Jeis Mobillity",
+    "caption": "이티밴 시승 이벤트, '이티밴과 함께 여름 휴가 떠나자!'",
+    "category": "EVENT",
+    "image": "images/project/2024/2506_summerevt_thumb.jpg",
+    "date": "Jun, 2024",
+    "alt": "",
+    "detailImages": [
+      "images/project/2024/2506_summerevt_01.jpg"
+    ],
+    "link": ""
+  },
+  {
     "title": "Grand Hyatt Jeju",
     "caption": "그랜드 하얏트 제주 호텔의 다양한 프로모션 배너",
     "category": "EVENT",
