@@ -37,7 +37,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
             style={{
               position: 'absolute',
               inset: 0,
-              background: 'linear-gradient(90deg, #15151a 0%, #202028 50%, #15151a 100%)',
+              background: 'linear-gradient(90deg, rgba(120, 120, 140, 0.08) 0%, rgba(120, 120, 140, 0.16) 50%, rgba(120, 120, 140, 0.08) 100%)',
               animation: 'pulse 1.5s infinite',
             }}
           />
