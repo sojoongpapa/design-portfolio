@@ -69,13 +69,6 @@ export const YouTubeMediaSection: React.FC<YouTubeMediaSectionProps> = ({ videos
 
   return (
     <section className="detail-videos-container" aria-label="프로젝트 영상 목록">
-      <div className="detail-section-title-wrap">
-        <h2 className="detail-section-title">
-          <Play size={16} className="title-icon" />
-          <span>PROJECT VIDEOS ({videos.length})</span>
-        </h2>
-      </div>
-
       <div className="detail-videos-flow">
         {/* 1. 일반 와이드 영상 (상단 우선 배치) */}
         {standardVideos.length > 0 && (

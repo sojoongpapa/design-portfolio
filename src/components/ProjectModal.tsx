@@ -243,15 +243,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
         {/* Detail Images Flow */}
         {(displayImages.length > 0 || projectVideos.length === 0) && (
           <div className="detail-images-container">
-            {displayImages.length > 0 && projectVideos.length > 0 && (
-              <div className="detail-section-title-wrap">
-                <h2 className="detail-section-title">
-                  <Layers size={16} className="title-icon" />
-                  <span>PROJECT IMAGES ({displayImages.length})</span>
-                </h2>
-              </div>
-            )}
-
             <div className="detail-images-body">
               {displayImages.length > 0 ? (
                 displayImages.map((imgUrl, idx) => (
