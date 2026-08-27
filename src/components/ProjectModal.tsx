@@ -78,13 +78,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
   const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
   const nextProject = currentIndex >= 0 && currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
 
-  // 1. Lock background body scroll while modal is open
+  // 1. Lock background body & html scroll and remove parent scrollbar while modal is open
   useEffect(() => {
-    const originalOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+    const rootHtml = document.documentElement;
+    const body = document.body;
+
+    rootHtml.classList.add('modal-open');
+    body.classList.add('modal-open');
 
     return () => {
-      document.body.style.overflow = originalOverflow;
+      rootHtml.classList.remove('modal-open');
+      body.classList.remove('modal-open');
     };
   }, []);
 

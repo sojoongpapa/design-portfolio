@@ -116,6 +116,12 @@ html {
   scrollbar-gutter: stable;
 }
 
+html.modal-open,
+body.modal-open {
+  overflow: hidden !important;
+  scrollbar-gutter: auto !important;
+}
+
 body {
   min-height: 100vh;
   overflow-x: hidden;
@@ -1213,6 +1219,8 @@ body {
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   display: flex;
   flex-direction: column;
   animation: fadeIn 0.25s ease-out;
