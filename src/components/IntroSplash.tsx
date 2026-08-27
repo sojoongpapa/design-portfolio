@@ -100,7 +100,7 @@ export const IntroSplash: React.FC<IntroSplashProps> = ({ designerName, onFinish
           }}
         >
           <img
-            src="./images/about/photo-profile-watermarked.webp"
+            src={`${import.meta.env.BASE_URL}images/about/photo-profile-watermarked.webp`}
             alt={designerName}
             style={{
               width: '100%',
@@ -112,10 +112,11 @@ export const IntroSplash: React.FC<IntroSplashProps> = ({ designerName, onFinish
               // fallback to png
               const target = e.currentTarget;
               if (target.src.endsWith('.webp')) {
-                target.src = './images/about/photo-profile-watermarked.png';
+                target.src = `${import.meta.env.BASE_URL}images/about/photo-profile-watermarked.png`;
               }
             }}
           />
+
         </div>
 
         {/* Title & Brand */}

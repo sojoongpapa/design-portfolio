@@ -67,14 +67,37 @@ export function usePortfolio(): UsePortfolioResult {
           throw new Error('Failed to load one or more modular data files');
         }
 
+        const normalizeAssetPath = (path?: string) => {
+          if (!path) return '';
+          const trimmed = path.trim();
+          if (
+            trimmed.startsWith('http://') ||
+            trimmed.startsWith('https://') ||
+            trimmed.startsWith('data:') ||
+            trimmed.startsWith('blob:')
+          ) {
+            return trimmed;
+          }
+          // Remove leading './' or '/' to avoid double slashes
+          const clean = trimmed.replace(/^(\.\/|\/)+/, '');
+          return `${normalizedBase}${clean}`;
+        };
+
         const profile: ProfileInfo = await profileRes.json();
-        const about: AboutInfo = await aboutRes.json();
+        const rawAbout: AboutInfo = await aboutRes.json();
+        const about: AboutInfo = {
+          ...rawAbout,
+          image: rawAbout.image ? normalizeAssetPath(rawAbout.image) : rawAbout.image,
+        };
         const contact: ContactInfo = await contactRes.json();
         const rawProjects: ProjectItem[] = await projectsRes.json();
         const projects: ProjectItem[] = rawProjects.map((p, index) => ({
           ...p,
-          id: p.id || `project-${index + 1}`,
+          id: p.id !== undefined && p.id !== null ? p.id : `project-${index + 1}`,
+          image: normalizeAssetPath(p.image),
+          detailImages: (p.detailImages || []).map((img) => normalizeAssetPath(img)),
         }));
+
 
         let settings: SiteSettings = defaultSettings;
         if (settingsRes && settingsRes.ok) {

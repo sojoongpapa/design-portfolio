@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { usePortfolio } from './hooks/usePortfolio';
 import { useTheme } from './hooks/useTheme';
 import { Header, TabType } from './components/Header';
@@ -11,25 +12,94 @@ import { Footer } from './components/Footer';
 import { IntroSplash } from './components/IntroSplash';
 import { ProjectItem } from './types/portfolio';
 
+const TAB_ORDER: TabType[] = ['HOME', 'PROJECTS', 'ABOUT', 'CONTACT'];
+
+const getTabFromPath = (pathname: string): TabType => {
+  const cleanPath = pathname.replace(/\/+$/, '') || '/';
+  if (cleanPath.startsWith('/projects') || cleanPath.startsWith('/project/')) return 'PROJECTS';
+  if (cleanPath.startsWith('/about')) return 'ABOUT';
+  if (cleanPath.startsWith('/contact')) return 'CONTACT';
+  return 'HOME';
+};
+
+const getPathFromTab = (tab: TabType): string => {
+  switch (tab) {
+    case 'HOME':
+      return '/';
+    case 'PROJECTS':
+      return '/projects';
+    case 'ABOUT':
+      return '/about';
+    case 'CONTACT':
+      return '/contact';
+    default:
+      return '/';
+  }
+};
+
 export const App: React.FC = () => {
   const { data, loading } = usePortfolio();
   const { theme, toggleTheme } = useTheme();
-  const [activeTab, setActiveTab] = useState<TabType>('HOME');
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const currentTabFromUrl = getTabFromPath(location.pathname);
+  const [activeTab, setActiveTab] = useState<TabType>(currentTabFromUrl);
   const [targetTab, setTargetTab] = useState<TabType | null>(null);
   const [flipDirection, setFlipDirection] = useState<'right' | 'left'>('right');
   const [flipPhase, setFlipPhase] = useState<'idle' | 'out' | 'in'>('idle');
+
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
   const [modalProjects, setModalProjects] = useState<ProjectItem[]>([]);
 
-  const TAB_ORDER: TabType[] = ['HOME', 'PROJECTS', 'ABOUT', 'CONTACT'];
+  // 초기 렌더링 여부 추적
+  const isInitialMount = useRef(true);
+
+  // URL 변경 감지하여 탭 애니메이션 및 활성 탭 동기화
+  useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      setActiveTab(currentTabFromUrl);
+      return;
+    }
+
+    if (currentTabFromUrl !== activeTab && flipPhase === 'idle') {
+      const currentIndex = TAB_ORDER.indexOf(activeTab);
+      const targetIndex = TAB_ORDER.indexOf(currentTabFromUrl);
+      setFlipDirection(targetIndex >= currentIndex ? 'right' : 'left');
+      setTargetTab(currentTabFromUrl);
+      setFlipPhase('out');
+    }
+  }, [currentTabFromUrl, activeTab, flipPhase]);
+
+  // URL에서 /project/:id 감지하여 모달 열기/닫기 동기화
+  useEffect(() => {
+    if (!data || !data.projects || data.projects.length === 0) return;
+
+    const match = location.pathname.match(/^\/project\/([^/]+)/);
+    if (match) {
+      const rawId = decodeURIComponent(match[1]);
+      const found = data.projects.find(
+        (p) =>
+          String(p.id) === rawId ||
+          p.title === rawId ||
+          encodeURIComponent(String(p.id ?? '')) === rawId
+      );
+      if (found) {
+        setSelectedProject(found);
+        if (modalProjects.length === 0) {
+          setModalProjects(data.projects);
+        }
+      }
+    } else {
+      setSelectedProject(null);
+    }
+  }, [location.pathname, data]);
 
   const handleTabChange = (nextTab: TabType) => {
-    if (nextTab === activeTab || flipPhase !== 'idle') return;
-    const currentIndex = TAB_ORDER.indexOf(activeTab);
-    const targetIndex = TAB_ORDER.indexOf(nextTab);
-    setFlipDirection(targetIndex >= currentIndex ? 'right' : 'left');
-    setTargetTab(nextTab);
-    setFlipPhase('out');
+    if (nextTab === activeTab && !location.pathname.startsWith('/project/')) return;
+    const targetPath = getPathFromTab(nextTab);
+    navigate(targetPath);
   };
 
   const handleAnimationEnd = (e: React.AnimationEvent) => {
@@ -46,13 +116,22 @@ export const App: React.FC = () => {
   };
 
   const handleOpenProject = (project: ProjectItem, contextProjects?: ProjectItem[]) => {
-    setSelectedProject(project);
-    setModalProjects(contextProjects && contextProjects.length > 0 ? contextProjects : (data?.projects || []));
+    if (contextProjects && contextProjects.length > 0) {
+      setModalProjects(contextProjects);
+    } else if (data?.projects) {
+      setModalProjects(data.projects);
+    }
+    const projectId = project.id || encodeURIComponent(project.title);
+    navigate(`/project/${projectId}`);
   };
 
   const handleCloseProject = () => {
-    setSelectedProject(null);
-    setModalProjects([]);
+    navigate('/projects');
+  };
+
+  const handleSelectProjectInModal = (project: ProjectItem) => {
+    const projectId = project.id || encodeURIComponent(project.title);
+    navigate(`/project/${projectId}`);
   };
 
   if (loading && !data) {
@@ -154,7 +233,7 @@ export const App: React.FC = () => {
           project={selectedProject}
           projects={activeModalProjects}
           onClose={handleCloseProject}
-          onSelectProject={(p) => setSelectedProject(p)}
+          onSelectProject={handleSelectProjectInModal}
         />
       )}
 
@@ -165,3 +244,4 @@ export const App: React.FC = () => {
 };
 
 export default App;
+

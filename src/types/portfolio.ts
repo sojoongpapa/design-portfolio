@@ -1,5 +1,5 @@
 export interface ProjectItem {
-  id?: string;                   // 렌더링 키 및 모달 식별용 ID (자동 생성)
+  id?: string | number;          // 렌더링 키 및 모달 식별용 ID (자동 생성 또는 직접 지정)
   title: string;                 // 프로젝트 타이틀
   caption: string;               // 요약 캡션 / 설명문
   category: string;              // 카테고리
