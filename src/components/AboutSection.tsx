@@ -13,12 +13,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ about }) => {
   const endYear = about.experience[0]?.year || '2018';
   const totalProjects = about.experience.reduce((acc, curr) => acc + curr.items.length, 0);
 
-  // Base URL normalization for GitHub Pages compatibility
-  const basePath = import.meta.env.BASE_URL || './';
-  const normalizedBase = basePath.endsWith('/') ? basePath : `${basePath}/`;
-  const imageSrc = about.image
-    ? (about.image.startsWith('http') ? about.image : `${normalizedBase}${about.image.replace(/^\//, '')}`)
-    : '';
+  // Image source is already normalized in usePortfolio
+  const imageSrc = about.image?.trim() || '';
+
 
   return (
     <section className="about-container animate-fadeIn">
