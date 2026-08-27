@@ -6,9 +6,6 @@ export const defaultSettings: SiteSettings = {
     initialVisibleCount: 24,
     loadMoreStep: 24,
   },
-  home: {
-    recentProjectsCount: 3,
-  },
 };
 
 const initialEmptyData: PortfolioData = {
@@ -89,10 +86,6 @@ export function usePortfolio(): UsePortfolioResult {
                   fetchedSettings.projects?.initialVisibleCount ?? defaultSettings.projects.initialVisibleCount,
                 loadMoreStep:
                   fetchedSettings.projects?.loadMoreStep ?? defaultSettings.projects.loadMoreStep,
-              },
-              home: {
-                recentProjectsCount:
-                  fetchedSettings.home?.recentProjectsCount ?? defaultSettings.home?.recentProjectsCount,
               },
             };
           } catch {

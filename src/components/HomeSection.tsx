@@ -8,7 +8,7 @@ import {
   ChevronRight,
   ImageOff,
 } from 'lucide-react';
-import { ProfileInfo, AboutInfo, ProjectItem, HomeSettings } from '../types/portfolio';
+import { ProfileInfo, AboutInfo, ProjectItem } from '../types/portfolio';
 import { TabType } from './Header';
 import { ProjectCard } from './ProjectCard';
 import { ShootingStars } from './ShootingStars';
@@ -18,7 +18,6 @@ interface HomeSectionProps {
   profile: ProfileInfo;
   about: AboutInfo;
   projects: ProjectItem[];
-  settings?: HomeSettings;
   theme?: Theme;
   onNavigate: (tab: TabType) => void;
   onSelectProject: (project: ProjectItem, contextProjects?: ProjectItem[]) => void;
@@ -189,7 +188,6 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
   profile,
   about,
   projects,
-  settings: _settings,
   theme = 'light',
   onNavigate,
   onSelectProject,

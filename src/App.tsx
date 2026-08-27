@@ -87,7 +87,6 @@ export const App: React.FC = () => {
             profile={profile}
             about={about}
             projects={projects}
-            settings={settings.home}
             theme={theme}
             onNavigate={handleTabChange}
             onSelectProject={handleOpenProject}

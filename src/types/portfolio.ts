@@ -61,13 +61,8 @@ export interface ProjectSettings {
   loadMoreStep: number;
 }
 
-export interface HomeSettings {
-  recentProjectsCount?: number;
-}
-
 export interface SiteSettings {
   projects: ProjectSettings;
-  home?: HomeSettings;
 }
 
 export interface PortfolioData {

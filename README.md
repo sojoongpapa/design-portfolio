@@ -161,23 +161,21 @@
 
 ### ⑤ 화면 표시 개수 및 페이징 설정: `settings.json`
 - 파일 위치: `public/data/settings.json`
-- 프로젝트 갤러리와 홈 화면에 한 번에 표시할 카드 개수 및 '더보기' 단위를 설정합니다.
+- 전체 프로젝트(PROJECTS) 탭에서 한 번에 표시할 카드 개수 및 '더보기' 단위를 설정합니다.
 
 ```json
 {
   "projects": {
-    "initialVisibleCount": 12,
-    "loadMoreStep": 24
-  },
-  "home": {
-    "recentProjectsCount": 6
+    "initialVisibleCount": 51,
+    "loadMoreStep": 51
   }
 }
 ```
 
-* **`projects.initialVisibleCount`**: PROJECTS(프로젝트) 탭에서 처음에 기본으로 보여줄 프로젝트 카드 개수 (예: `12`, `24`)
-* **`projects.loadMoreStep`**: 프로젝트 탭 하단에서 **[+ 더보기(Load More)]** 버튼을 클릭할 때 한 번에 추가로 로드할 개수 (예: `24`)
-> 💡 **참고**: 홈 화면에 노출되는 프로젝트는 `projects.json`의 `main` 번호가 부여된 항목들이 동적으로 자동 노출됩니다.
+* **`projects.initialVisibleCount`**: PROJECTS(프로젝트) 탭에서 처음에 기본으로 보여줄 프로젝트 카드 개수 (예: `12`, `51`)
+* **`projects.loadMoreStep`**: 프로젝트 탭 하단에서 **[+ 더보기(Load More)]** 버튼을 클릭할 때 한 번에 추가로 로드할 개수 (예: `24`, `51`)
+
+> 💡 **참고**: 홈 화면에 노출되는 프로젝트는 `projects.json`에서 `main` 순번 숫자가 부여된 항목들이 동적으로 자동 노출됩니다.
 
 ---
 
