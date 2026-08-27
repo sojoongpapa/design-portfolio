@@ -2774,8 +2774,8 @@ body {
     linear-gradient(to bottom, var(--border-subtle) 1px, transparent 1px);
   background-size: 56px 56px;
   opacity: 0.55;
-  mask-image: radial-gradient(ellipse 60% 60% at 50% 40%, black 30%, transparent 80%);
-  -webkit-mask-image: radial-gradient(ellipse 60% 60% at 50% 40%, black 30%, transparent 80%);
+  mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, black 45%, transparent 95%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, black 45%, transparent 95%);
 }
 
 .hero-aurora-blob {
@@ -2786,18 +2786,18 @@ body {
 }
 
 .hero-aurora-1 {
-  width: 500px;
-  height: 380px;
-  top: 5%;
+  width: 600px;
+  height: 440px;
+  top: -40px;
   left: 15%;
   background: radial-gradient(circle, rgba(229, 184, 105, 0.22) 0%, rgba(217, 119, 6, 0.09) 60%, transparent 80%);
   animation: auroraFlow1 12s ease-in-out infinite;
 }
 
 .hero-aurora-2 {
-  width: 540px;
-  height: 420px;
-  top: 10%;
+  width: 620px;
+  height: 460px;
+  top: -20px;
   right: 10%;
   background: radial-gradient(circle, rgba(99, 102, 241, 0.16) 0%, rgba(139, 92, 246, 0.07) 60%, transparent 80%);
   animation: auroraFlow2 14s ease-in-out infinite;

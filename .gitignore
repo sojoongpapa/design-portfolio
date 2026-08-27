@@ -131,9 +131,7 @@ venv/
 env/
 .env/
 
-# PWA files
-public/sw.js
-public/sw.js.map
+# PWA auto-generated files (if using workbox build)
 public/workbox-*.js
 public/workbox-*.js.map
 
