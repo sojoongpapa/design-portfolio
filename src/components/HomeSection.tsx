@@ -189,36 +189,34 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
   profile,
   about,
   projects,
-  settings,
+  settings: _settings,
   theme = 'light',
   onNavigate,
   onSelectProject,
 }) => {
-  const recentCount = settings?.recentProjectsCount ?? 3;
-
-  // 대표작 선별: main: true 항목 중 가장 최근 항목 우선, 없으면 첫 번째 프로젝트
-  const heroFeaturedProject = useMemo(() => {
-    const mainProjects = projects.filter((p) => p.main === true);
-    if (mainProjects.length === 1) {
-      return mainProjects[0];
-    }
-    if (mainProjects.length > 1) {
-      // main: true가 여러 개일 때는 날짜 기준 최신순 정렬, 날짜가 같거나 파싱 불가 시 배열 상 앞선 순서 유지
-      return [...mainProjects].sort((a, b) => {
+  // main에 숫자가 지정된 프로젝트만 필터링 후 숫자 오름차순(1, 2, 3...) 정렬
+  const mainProjects = useMemo(() => {
+    return projects
+      .filter((p): p is ProjectItem & { main: number } => typeof p.main === 'number' && !isNaN(p.main))
+      .sort((a, b) => {
+        if (a.main !== b.main) {
+          return a.main - b.main;
+        }
+        // main 번호가 동일할 경우 날짜 최신순 정렬
         const timeA = parseProjectDate(a.date);
         const timeB = parseProjectDate(b.date);
         if (timeB !== timeA) return timeB - timeA;
         return projects.indexOf(a) - projects.indexOf(b);
-      })[0];
-    }
-    // main: true가 지정되지 않았을 경우 첫 번째 프로젝트를 fallback으로 사용
-    return projects[0] || null;
+      });
   }, [projects]);
 
-  // 서브 대표작: 메인 대표작을 제외한 나머지 프로젝트 중 상위 recentCount개
+  // 첫 번째 프로젝트: 대형 스포트라이트 카드 (없으면 null)
+  const heroFeaturedProject = mainProjects[0] || null;
+
+  // 두 번째 이후 프로젝트들: 하단 서브 그리드에 동적으로 노출 (0개 ~ N개)
   const secondaryFeaturedProjects = useMemo(() => {
-    return projects.filter((p) => p !== heroFeaturedProject).slice(0, recentCount);
-  }, [projects, heroFeaturedProject, recentCount]);
+    return mainProjects.slice(1);
+  }, [mainProjects]);
 
   const tickerKeywords =
     profile.tickerKeywords && profile.tickerKeywords.length > 0
@@ -336,74 +334,78 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
       </section>
 
       {/* 3. CURATED FEATURED WORKS (Cinematic Spotlight + Asymmetrical Grid) */}
-      <section className="home-featured-section">
-        <div className="section-header-row">
-          <div>
-            <div className="section-eyebrow">
-              <Sparkles size={13} style={{ color: 'var(--accent-gold)' }} />
-              <span>CURATED HIGHLIGHTS</span>
-            </div>
-            <h2 className="section-main-title">Project Works & Portfolio</h2>
-            <p className="section-sub-desc">
-              20년간 제작된 다양한 프로젝트 목록입니다.
-            </p>
-          </div>
-          <button
-            onClick={() => onNavigate('PROJECTS')}
-            className="view-all-link-btn"
-            aria-label="View all projects"
-          >
-            <span>전체 {projects.length}개 프로젝트 탐색</span>
-            <ChevronRight size={16} />
-          </button>
-        </div>
-
-        {/* 3-A. Featured Hero Spotlight Card */}
-        {heroFeaturedProject && (
-          <div
-            className="cinematic-spotlight-card"
-            onClick={() => onSelectProject(heroFeaturedProject, projects)}
-          >
-            <SpotlightMedia project={heroFeaturedProject} />
-            <div className="spotlight-content-box">
-              <div className="spotlight-meta-line">
-                <span className="spotlight-badge">FEATURED PROJECT</span>
-                <span className="spotlight-category">{heroFeaturedProject.category}</span>
-                {heroFeaturedProject.date && (
-                  <span className="spotlight-date">{heroFeaturedProject.date}</span>
-                )}
+      {mainProjects.length > 0 && (
+        <section className="home-featured-section">
+          <div className="section-header-row">
+            <div>
+              <div className="section-eyebrow">
+                <Sparkles size={13} style={{ color: 'var(--accent-gold)' }} />
+                <span>CURATED HIGHLIGHTS</span>
               </div>
-              <h3 className="spotlight-title">{heroFeaturedProject.title}</h3>
-              <p className="spotlight-desc">{heroFeaturedProject.caption}</p>
-              <div className="spotlight-link">
-                <span>프로젝트 상세 보기</span>
-                <ArrowRight size={16} className="spotlight-arrow" />
+              <h2 className="section-main-title">Project Works & Portfolio</h2>
+              <p className="section-sub-desc">
+                20년간 제작된 다양한 프로젝트 목록입니다.
+              </p>
+            </div>
+            <button
+              onClick={() => onNavigate('PROJECTS')}
+              className="view-all-link-btn"
+              aria-label="View all projects"
+            >
+              <span>전체 {projects.length}개 프로젝트 탐색</span>
+              <ChevronRight size={16} />
+            </button>
+          </div>
+
+          {/* 3-A. Featured Hero Spotlight Card */}
+          {heroFeaturedProject && (
+            <div
+              className="cinematic-spotlight-card"
+              onClick={() => onSelectProject(heroFeaturedProject, projects)}
+            >
+              <SpotlightMedia project={heroFeaturedProject} />
+              <div className="spotlight-content-box">
+                <div className="spotlight-meta-line">
+                  <span className="spotlight-badge">FEATURED PROJECT</span>
+                  <span className="spotlight-category">{heroFeaturedProject.category}</span>
+                  {heroFeaturedProject.date && (
+                    <span className="spotlight-date">{heroFeaturedProject.date}</span>
+                  )}
+                </div>
+                <h3 className="spotlight-title">{heroFeaturedProject.title}</h3>
+                <p className="spotlight-desc">{heroFeaturedProject.caption}</p>
+                <div className="spotlight-link">
+                  <span>프로젝트 상세 보기</span>
+                  <ArrowRight size={16} className="spotlight-arrow" />
+                </div>
               </div>
             </div>
+          )}
+
+          {/* 3-B. Secondary Featured Projects Grid */}
+          {secondaryFeaturedProjects.length > 0 && (
+            <div className="project-grid secondary-grid">
+              {secondaryFeaturedProjects.map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  onClick={(p) => onSelectProject(p, projects)}
+                />
+              ))}
+            </div>
+          )}
+
+          <div className="showcase-bottom-cta">
+            <button
+              onClick={() => onNavigate('PROJECTS')}
+              className="designer-btn primary large"
+            >
+              <span>전체 {projects.length}개 프로젝트 모두 탐색하기</span>
+              <ArrowRight size={18} />
+            </button>
           </div>
-        )}
-
-        {/* 3-B. Secondary Featured Projects Grid */}
-        <div className="project-grid secondary-grid">
-          {secondaryFeaturedProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              onClick={(p) => onSelectProject(p, projects)}
-            />
-          ))}
-        </div>
-
-        <div className="showcase-bottom-cta">
-          <button
-            onClick={() => onNavigate('PROJECTS')}
-            className="designer-btn primary large"
-          >
-            <span>전체 {projects.length}개 프로젝트 모두 탐색하기</span>
-            <ArrowRight size={18} />
-          </button>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* 5. CLIENT COLLABORATIONS & TRUST STRIP */}
       {about.clients && about.clients.length > 0 && (
