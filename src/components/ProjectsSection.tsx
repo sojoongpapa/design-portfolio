@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { ProjectItem, ProjectSettings } from '../types/portfolio';
 import { ProjectCard } from './ProjectCard';
-import { Search, Layers, Filter, X } from 'lucide-react';
+import { Search, Layers, Filter, X, RotateCcw, SearchX } from 'lucide-react';
 import { createChoseongRegex } from '../utils/koreanSearch';
 
 interface ProjectsSectionProps {
@@ -180,12 +180,33 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
           ))}
         </div>
       ) : (
-        <div className="no-results-box">
-          <p className="no-results-text">
-            일치하는 프로젝트를 찾을 수 없습니다.
+        <div className="no-results-box animate-fadeIn">
+          <div className="no-results-icon-wrap">
+            <SearchX size={22} className="no-results-icon" />
+          </div>
+          <h3 className="no-results-title">일치하는 프로젝트를 찾을 수 없습니다</h3>
+          <p className="no-results-desc">
+            {searchQuery ? (
+              <>
+                <span className="no-results-query">"{searchQuery}"</span>에 대한 검색 결과가 없습니다.
+                <br />
+                검색어를 다시 확인하시거나 필터를 초기화해 보세요.
+              </>
+            ) : (
+              <>
+                선택하신 조건에 해당하는 프로젝트가 없습니다.
+                <br />
+                카테고리를 변경하거나 필터를 초기화해 보세요.
+              </>
+            )}
           </p>
-          <button onClick={handleResetFilters} className="home-btn secondary" style={{ marginTop: 16 }}>
-            <span>필터 초기화</span>
+          <button
+            type="button"
+            onClick={handleResetFilters}
+            className="no-results-reset-btn"
+          >
+            <RotateCcw size={14} className="reset-icon" />
+            <span>필터 및 검색 초기화</span>
           </button>
         </div>
       )}
