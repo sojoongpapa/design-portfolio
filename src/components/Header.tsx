@@ -134,7 +134,7 @@ export const Header: React.FC<HeaderProps> = ({
                 className="mobile-toggle mobile-close-btn"
                 aria-label="Close Navigation Menu"
               >
-                <X size={24} />
+                <X size={20} />
               </button>
             </div>
           </div>

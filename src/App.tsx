@@ -8,6 +8,7 @@ import { ProjectModal } from './components/ProjectModal';
 import { AboutSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { IntroSplash } from './components/IntroSplash';
 import { ProjectItem } from './types/portfolio';
 
 export const App: React.FC = () => {
@@ -120,6 +121,9 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-container">
+      {/* Mobile App Style Intro Splash */}
+      <IntroSplash designerName={profile.name} />
+
       {/* Subtle Background Glow */}
       <div className="bg-ambient-glow" />
 
