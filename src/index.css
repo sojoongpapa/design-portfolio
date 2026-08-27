@@ -2745,13 +2745,13 @@ body {
 /* Dynamic Hero Visual Backdrop (Strictly bounded from top of page down to marquee-section) */
 .hero-visual-backdrop {
   position: absolute;
-  top: -100px;
+  top: -120px;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  height: calc(100% + 100px);
+  height: calc(100% + 120px);
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
@@ -2761,8 +2761,8 @@ body {
 
 @media (min-width: 768px) {
   .hero-visual-backdrop {
-    top: -140px;
-    height: calc(100% + 140px);
+    top: -180px;
+    height: calc(100% + 180px);
   }
 }
 
@@ -2774,8 +2774,8 @@ body {
     linear-gradient(to bottom, var(--border-subtle) 1px, transparent 1px);
   background-size: 56px 56px;
   opacity: 0.55;
-  mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, black 45%, transparent 95%);
-  -webkit-mask-image: radial-gradient(ellipse 90% 75% at 50% 0%, black 45%, transparent 95%);
+  mask-image: radial-gradient(ellipse 95% 80% at 50% 0%, black 50%, transparent 95%);
+  -webkit-mask-image: radial-gradient(ellipse 95% 80% at 50% 0%, black 50%, transparent 95%);
 }
 
 .hero-aurora-blob {
@@ -2809,6 +2809,46 @@ body {
 
 [data-theme="light"] .hero-aurora-2 {
   background: radial-gradient(circle, rgba(79, 70, 229, 0.09) 0%, rgba(99, 102, 241, 0.04) 60%, transparent 80%);
+}
+
+/* ==========================================================================
+   INTERACTIVE AMBIENT MOUSE GLOW (Light Theme Only)
+   ========================================================================== */
+.hero-mouse-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(65px);
+  opacity: 0;
+  transform: translate3d(50vw, 200px, 0) translate(-50%, -50%);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+  z-index: 0;
+  display: none;
+}
+
+[data-theme="light"] .hero-mouse-glow {
+  display: block;
+  background: radial-gradient(
+    circle,
+    rgba(245, 158, 11, 0.32) 0%,
+    rgba(217, 119, 6, 0.14) 30%,
+    rgba(245, 158, 11, 0.05) 55%,
+    rgba(251, 191, 36, 0.015) 75%,
+    transparent 85%
+  );
+}
+
+.hero-mouse-glow.visible {
+  opacity: 1;
+}
+
+[data-theme="dark"] .hero-mouse-glow {
+  display: none !important;
 }
 
 /* ==========================================================================

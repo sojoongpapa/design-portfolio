@@ -12,6 +12,7 @@ import { ProfileInfo, AboutInfo, ProjectItem } from '../types/portfolio';
 import { TabType } from './Header';
 import { ProjectCard } from './ProjectCard';
 import { ShootingStars } from './ShootingStars';
+import { MouseGlow } from './MouseGlow';
 import { Theme } from '../hooks/useTheme';
 
 interface HomeSectionProps {
@@ -235,6 +236,7 @@ export const HomeSection: React.FC<HomeSectionProps> = ({
           <div className="hero-aurora-blob hero-aurora-1" />
           <div className="hero-aurora-blob hero-aurora-2" />
           <div className="hero-grid-mesh" />
+          {theme === 'light' && <MouseGlow theme={theme} />}
           {theme === 'dark' && <ShootingStars />}
         </div>
 
