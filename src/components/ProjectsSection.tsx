@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { ProjectItem, ProjectSettings } from '../types/portfolio';
 import { ProjectCard } from './ProjectCard';
 import { Search, Layers, Filter, X } from 'lucide-react';
+import { createChoseongRegex } from '../utils/koreanSearch';
 
 interface ProjectsSectionProps {
   projects: ProjectItem[];
@@ -51,8 +52,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
     return ['ALL', ...sortedCats];
   }, [projects]);
 
-  // 필터링 적용
+  // 초성 및 텍스트 매칭 필터링 적용
   const filteredProjects = useMemo(() => {
+    const trimmedQuery = searchQuery.trim();
+    const searchRegex = trimmedQuery ? createChoseongRegex(trimmedQuery) : null;
+
     return projects.filter((p) => {
       const projectCat = getCategoryLabel(p.category);
       const matchCat =
@@ -60,13 +64,14 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
         projectCat.toLowerCase() === selectedCategory.toLowerCase();
 
       if (!matchCat) return false;
+      if (!searchRegex) return true;
 
-      if (!searchQuery.trim()) return true;
-      const query = searchQuery.toLowerCase().trim();
+      // 초성 정규식 및 일반 텍스트 매칭 검사
       return (
-        p.title?.toLowerCase().includes(query) ||
-        p.caption?.toLowerCase().includes(query) ||
-        projectCat.toLowerCase().includes(query)
+        Boolean(p.title && searchRegex.test(p.title)) ||
+        Boolean(p.caption && searchRegex.test(p.caption)) ||
+        Boolean(projectCat && searchRegex.test(projectCat)) ||
+        Boolean(p.date && searchRegex.test(p.date))
       );
     });
   }, [projects, selectedCategory, searchQuery]);
@@ -148,7 +153,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               setSearchQuery(e.target.value);
               setVisibleCount(initialCount);
             }}
-            placeholder="제목, 키워드, 카테고리 검색..."
+            placeholder="제목, 키워드, 초성(예: ㅍㄹㅈㅌ) 검색..."
             className="search-input"
           />
           {searchQuery && (
